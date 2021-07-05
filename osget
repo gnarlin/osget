@@ -39,7 +39,7 @@ list () {
         find "$CONFIGURATION_DIR"/oslist/* -type f -print|awk  -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt"
 }
 
-checkfor_transmission () {
+checkfor_btclient () {
         TRANSMISSION-CLI="$(whereis transmission-cli|cut -f2 -d" ")"
 }
 
@@ -124,7 +124,7 @@ mkdir -p $CONFIGURATION_DIR
 if [ "$1" = "--help" ] || [ "$1" = "-h" ] || [ "$#" -eq "0" ];then
         show_help
 
-        if [ checkfor_transmission = "" ];then
+        if [ checkfor_btclient = "" ];then
                 echo "Transmission-cli isn't installed. If you wish to download via bittorrent please install it."
         fi
 
@@ -150,7 +150,7 @@ while true; do
 	esac
 done
 
-if [ checkfor_transmission = "" ];then
+if [ checkfor_btclient = "" ];then
 	echo "WARNING: Transmission-cli isn't installed. If you wish to download via bittorrent please install it."
 fi
 
