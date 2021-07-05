@@ -1,0 +1,10 @@
+HOMEPAGE="https://www.freebsd.org"
+MIRRORLIST="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html"
+
+FreeBSD is a free and open-source Unix-like operating system descended from the Berkeley Software Distribution (BSD), which was based on Research Unix. The first version of FreeBSD was released in 1993. In 2005, FreeBSD was the most popular open-source BSD operating system, accounting for more than three-quarters of all installed BSD systems.
+
+FreeBSD has similarities with Linux, with two major differences in scope and licensing: FreeBSD maintains a complete system, i.e. the project delivers a kernel, device drivers, userland utilities, and documentation, as opposed to Linux only delivering a kernel and drivers, and relying on third-parties for system software; and FreeBSD source code is generally released under a permissive BSD license, as opposed to the copyleft GPL used by Linux.
+
+The FreeBSD project includes a security team overseeing all software shipped in the base distribution. A wide range of additional third-party applications may be installed using the pkg package management system or FreeBSD Ports, or by compiling source code.
+
+Due to its licensing, much of FreeBSD's codebase has become an integral part of other operating systems, such as Apple's Darwin (the basis for macOS, iOS, watchOS, and tvOS), FreeNAS (an open-source NAS/SAN operating system), and the system software for Sony's PlayStation 3 and PlayStation 4.

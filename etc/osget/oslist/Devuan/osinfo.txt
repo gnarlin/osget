@@ -1,0 +1,13 @@
+HOMEPAGE="https://devuan.org"
+MIRRORLIST="https://devuan.org/get-devuan"
+
+Devuan is a fork of Debian that uses sysvinit instead of systemd which is the default in newer Debian releases.
+History
+
+The release of Debian 8 alienated some developers and other users due to the project's adoption of systemd. The first stable release of Devuan was published on May 25, 2017.
+
+Devuan has its own package repository which mirrors upstream Debian,[14] with local modifications made only when needed to allow for init systems other than systemd. Modified packages include policykit and udisks. Devuan is supposed to work like the corresponding Debian release. Devuan does not provide systemd in its repositories but still retains libsystemd0 until it has removed all dependencies.
+
+Instead of continuing the Debian practice of using Toy Story character names as release codenames,[15] Devuan aliases its releases using planet names. The first stable release shared the Debian 8 codename Jessie. However, the Devuan release was named for minor planet 10464. The second stable release is named ASCII for minor planet 3568, while the permanent alias for the Devuan unstable branch is Ceres, named for the dwarf planet.
+
+Devuan 2.0.0 ASCII was released on June 9, 2018.

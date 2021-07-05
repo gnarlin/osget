@@ -1,0 +1,6 @@
+HOMEPAGE="http://netbsd.org"
+MIRRORLIST="http://netbsd.org/mirrors/"
+
+NetBSD is a free and open-source Unix-like operating system based on the Berkeley Software Distribution (BSD). It was the first open-source BSD descendant officially released after 386BSD was forked. It continues to be actively developed and is available for many platforms, including servers, desktops, handheld devices, and embedded systems.
+
+The NetBSD project focuses on code clarity, careful design, and portability across many computer architectures. Its source code is publicly available and permissively licensed.

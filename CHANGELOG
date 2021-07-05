@@ -1,0 +1,47 @@
+Osget 0.1
+26.09.2019	Freyr Ólafsson	gnarlin@fripost.org
+	* First initial release
+	* Basic pool of GNU+Linux distributions + FreeBSD
+
+Osget 0.2
+27.09.2019	Freyr Ólafsson	gnarlin@fripost.org
+	* Implemented --directory/-d
+	* Created a man page
+	* Created an install script
+	* Added Linuxmint cinnamon to os pool
+	* Support downloading multiple operating systems one by one
+	* Added Devuan GNU/Linux to pool
+
+Osget 0.3
+05.10.2019	Freyr Ólafsson	gnarlin@fripost.org
+	* Fixed a bug which didn't parse osname correctly when directory path was too long
+	* Added Manjaro to OS pool
+Osget 0.4
+10.10.2019	Freyr Ólafsson	gnarlin@fripost.org
+	* Added ElementaryOS to OS pool
+	* Added generic OS names which downloads the most common version of the specified OS
+	* Finished adding osinfo.txt to all OS's in the pool
+Osget 0.5
+18.10.2019	Freyr Ólafsson	gnarlin@fripost.org
+	* Added Ubuntu 19.10 to OS pool
+	* Fixed the README.md and manpage a little
+Osget 0.6
+07.12.2019	Freyr Ólafsson	gnarlin@fripost.org
+	* Made download by distro name case insensitive. For example: "osget debian" now works.
+	* Moved MIRRORLIST into the osinfo.txt and added a HOMEPAGE variable.
+	* Updated some dead links and other minor fixed to the distro entries.
+Osget 0.6.1
+08.12.2019	Freyr Ólafsson	gnarlin@fripost.org
+	* Fixed a bug where ./install --uninstall did not remove /usr/bin/osget
+Osget 0.7
+08.02.2020	Freyr Ólafsson	gnarlin@fripost.org
+	* Fixed a bug where you couldn't download multiple iso's using just the generic distro names.
+	For example: osget debian arch netbsd would only download the first one and then stop.
+	* Fixed some minor potential parsing bugs.
+Osget 0.8
+10.05.2021	Freyr Ólafsson	gnarlin@fripost.org
+	* Switched to using GNU getopt to parse optional parameters far more easily.
+Osget 0.9
+04.06.2021	Freyr Ólafsson	gnarlin@fripost.org
+	* Added bittorrent support
+	* Added -s or --lshort to display the general names of operating systems.

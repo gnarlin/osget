@@ -1,0 +1,4 @@
+HOMEPAGE="https://elementary.io"
+MIRRORLIST=""
+
+elementary OS is a Linux distribution based on Ubuntu. It is the flagship distribution to showcase the Pantheon desktop environment. The distribution promotes itself as a “fast, open, and privacy-respecting” replacement to macOS and Windows. It focuses mainly on non-technical users, and has a pay-what-you-want model. The operating system is developed by elementary, Inc.

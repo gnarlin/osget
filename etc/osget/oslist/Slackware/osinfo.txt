@@ -1,0 +1,8 @@
+HOMEPAGE="https://www.slackware.com"
+MIRRORLIST="https://mirrors.slackware.com/mirrorlist/"
+
+Slackware is a Linux distribution created by Patrick Volkerding in 1993. Originally based on Softlanding Linux System, Slackware has been the basis for many other Linux distributions, most notably the first versions of SUSE Linux distributions, and is the oldest distribution that is still maintained.
+
+Slackware aims for design stability and simplicity and to be the most "Unix-like" Linux distribution. It makes as few modifications as possible to software packages from upstream and tries not to anticipate use cases or preclude user decisions. In contrast to most modern Linux distributions, Slackware provides no graphical installation procedure and no automatic dependency resolution of software packages. It uses plain text files and only a small set of shell scripts for configuration and administration. Without further modification it boots into a command-line interface environment. Because of its many conservative and simplistic features, Slackware is often considered to be most suitable for advanced and technically inclined Linux users.
+
+Slackware is available for the IA-32 and x86_64 architectures, with a port to the ARM architecture. While Slackware is mostly free and open source software, it does not have a formal bug tracking facility or public code repository, with releases periodically announced by Volkerding. There is no formal membership procedure for developers and Volkerding is the primary contributor to releases. 

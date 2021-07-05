@@ -1,0 +1,8 @@
+HOMEPAGE="https://opensuse.org"
+MIRRORLIST="https://mirrors.opensuse.org/"
+
+openSUSE formerly SUSE Linux and SuSE Linux Professional, is a Linux distribution sponsored by SUSE Linux GmbH and other companies. It is widely used throughout the world. The focus of its development is creating usable open-source tools for software developers and system administrators, while providing a user-friendly desktop and feature-rich server environment.
+
+The initial release of the community project was a beta version of SUSE Linux 10.0. The current stable fixed release is openSUSE Leap 15.1. The community project offers a rolling release version called openSUSE Tumbleweed, which is continuously updated with tested, stable packages. This is based on the rolling development code base called "Factory". Other tools and applications associated with the openSUSE project are YaST, Open Build Service, openQA, Snapper, Machinery, Portus and Kiwi.
+
+Novell created openSUSE after purchasing SuSE Linux AG for US$210 million on 4 November 2003. The Attachmate Group acquired Novell and split Novell and SUSE into two autonomous subsidiary companies. After The Attachmate Group merged with Micro Focus in November 2014, SUSE became its own business unit. On 4 July 2018, EQT Partners purchased SUSE for $2.5 billion USD.

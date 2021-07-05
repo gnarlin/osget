@@ -1,0 +1,5 @@
+# This is the configuration file for osget to download Ubuntu 19.04
+
+# Urls for ubuntu via http
+URL="http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso"
+

@@ -1,0 +1,5 @@
+# This is the configuration file for osget to download Debian 10.2.0-amd64-netinst
+
+# Urls for debian via http
+URL="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.2.0-amd64-netinst.iso"
+

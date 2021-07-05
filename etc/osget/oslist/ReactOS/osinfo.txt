@@ -1,0 +1,8 @@
+HOMEPAGE="https://reactos.org"
+MIRRORLIST="http://www.reactos.org/download"
+
+ReactOS is a free and open-source operating system for amd64/i686 personal computers intended to be binary-compatible with computer programs and device drivers made for Windows Server 2003 and later versions. ReactOS has been noted as a potential open-source drop-in replacement for Windows and for its information on undocumented Windows APIs.
+
+ReactOS has been in development since 1996. As of October 2019 it is still considered alpha software, feature-incomplete, but with many Windows applications already working, e.g., Adobe Reader 6.0, OpenOffice, and is, therefore, recommended by the developers only for evaluation and testing purposes.
+
+ReactOS is primarily written in C, with some elements, such as ReactOS File Explorer, written in C++. The project partially implements Windows API functionality and has been ported to the AMD64 processor architecture. ReactOS, as part of the FOSS ecosystem, re-uses and collaborates with many other FOSS projects, most notably the Wine project, which presents a Windows compatibility layer for Unix-like operating systems. 

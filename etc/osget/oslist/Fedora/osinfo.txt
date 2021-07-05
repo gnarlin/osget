@@ -1,0 +1,8 @@
+HOMEPAGE="https://getfedora.org"
+MIRRORLIST="https://admin.fedoraproject.org/mirrormanager/"
+
+Fedora or Fedora Linux is a Linux distribution developed by the independent community-supported Fedora Project, sponsored primarily by Red Hat with substantial support by other companies. Fedora contains software distributed under various free and open-source licenses and aims to be on the leading edge of such technologies. Fedora is the upstream source of the commercial Red Hat Enterprise Linux distribution.
+
+Since the release of Fedora 30, five different editions are currently available: Workstation, focused on the personal computer, Server for servers, CoreOS, focused on cloud computing, Silverblue, focused on an immutable desktop specialized to container-based workflows and IoT, focused on IoT devices
+
+As of February 2016, Fedora has an estimated 1.2 million users, including Linus Torvalds, creator of the Linux kernel.

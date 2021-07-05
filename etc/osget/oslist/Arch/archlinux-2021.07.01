@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download Arch GNU/Linux
+
+# Urls for Arch via http
+URL="https://mirrors.evowise.com/archlinux/iso/2021.07.01/archlinux-2021.07.01-x86_64.iso"
+MAGNET="magnet:?xt=urn:btih:2bd9d334e8d1e5bd7768755173222db5c6dea13b&dn=archlinux-2021.07.01-x86_64.iso"
+SHA1SUM="5804cefb2e5e7498cb15f38180cb3ebc094f6955"

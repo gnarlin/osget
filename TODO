@@ -1,0 +1,23 @@
+OSGET TODO
+
+0.3:
+* Flesh out and make --information/-i more flexable, take more input etc. DONE!
+* Add a few more operating systems and versions to the pool.
+* Add DOWNLOAD_DIR functionality. Currently it does nothing. DONE!
+
+0.7:
+* Allow multiple os downloads using only shortnames. DONE!
+
+0.8:
+* Allow arbitrary number of parameters and values for parameters to be passed to osget. DONE!
+* Add support for bittorrent via transmission-cli. DONE!
+
+0.9:
+* Add a script to verify that all URL's are still valid.
+* Add support for updating OS list from an internet mirror.
+* Add checksum checking for downloaded iso files
+* Create a .deb package and a .rpm package
+* Checksum support
+
+UNKOWN:
+* Swap to using aria2c for torrenting. Transmission-cli seems to be on life support.

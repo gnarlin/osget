@@ -1,0 +1,6 @@
+HOMEPAGE="https://centos.org"
+MIRRORLIST="https://centos.org/download/mirrors/"
+
+CentOS from Community Enterprise Operating System is a Linux distribution that provides a free, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux (RHEL). In January 2014, CentOS announced the official joining with Red Hat while staying independent from RHEL, under a new CentOS governing board.
+
+The first CentOS release in May 2004, numbered as CentOS version 2, was forked from RHEL version 2.1AS. CentOS version 7.0 officially supports only the x86-64 architecture, while versions older than 7.0-1406 also support IA-32 with Physical Address Extension (PAE). As of December 2015, AltArch releases of CentOS 7 are available for the IA-32 architecture, Power ISA, and for the ARMv7hl and AArch64 variants of the ARM architecture. Building of CentOS 8 started at May 2019. CentOS 8 was released on 24 September 2019.

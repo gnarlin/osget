@@ -1,0 +1,12 @@
+HOMEPAGE="https://www.archlinux.org"
+MIRRORLIST="https://www.archlinux.org/mirrorlist/all/"
+
+Arch Linux is a Linux distribution for computers based on x86-64 architectures.
+
+Arch Linux is composed of free, open-source and nonfree software, and supports community involvement.
+
+The design approach of the development team follows the KISS principle ("keep it simple, stupid") as the general guideline; it focuses on elegance, code correctness, minimalism and simplicity, and expects the user to be willing to make some effort to understand the system's operation. A package manager written specifically for Arch Linux, pacman, is used to install, remove and update software packages.
+
+Arch Linux uses a rolling release model, meaning there are no "major release" of completely new versions of the system; a regular system update is all that is needed to obtain the latest Arch software; the installation images released by the Arch team are simply up-to-date snapshots of the main system components.
+
+Arch Linux has comprehensive documentation, which consists of a community wiki known as the ArchWiki.

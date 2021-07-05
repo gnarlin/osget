@@ -1,0 +1,6 @@
+HOMEPAGE="https://www.linuxmint.com"
+MIRRORLIST="https://linuxmint.com/edition.php?id=267"
+
+Linux Mint is a community-driven Linux distribution based on Ubuntu that strives to be a "modern, elegant and comfortable operating system which is both powerful and easy to use." Linux Mint provides full out-of-the-box multimedia support by including some proprietary software and comes bundled with a variety of free and open-source applications.
+
+The project was created by Clément Lefèbvre and is being actively developed by the Linux Mint Team and community.

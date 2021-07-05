@@ -1,0 +1,194 @@
+#! /bin/bash
+
+#uncomment for debugging
+#set -x
+
+#always use an absolute path for configuration directory
+#if you use a relative path you can only run osget from the directory the script is in.
+readonly CONFIGURATION_DIR="/etc/osget"
+VERSION="0.9"
+
+source $CONFIGURATION_DIR/osget.conf
+
+show_help () {
+cat << EOF
+osget [OPTIONS] [OPERATING_SYSTEM1] {OPERATING_SYSTEM2] ...
+osget is a command line utility to easily download different operating systems
+
+--help or -h            Shows this help message.
+--version or -v         Shows the current program version.
+--list or -l            Shows a list of all available operating systems.
+--lshort or -s		Shows a list of all available operating systems by their general and default names.
+--information or -i     Shows general information and description of the operating system.
+--directory or -d       Specify directory to download to. Osget defaults to downloading to current directory.
+                        Directory can also be specified in the configuration file.
+--torrent or -t		Use bittorrent to download.
+
+EXAMPLE: osget -d ~/Downloads/ Ubuntu-18.04.3-desktop
+You can also use the general names of Operating systems or distributions which will download the most common version.
+EXAMPLE: "osget Ubuntu" will download the 64 bit gnome 18.04.3 version. This is determined with a "default" symlink in the pool directories.
+
+EOF
+}
+
+list_short () {
+	ls -1 $CONFIGURATION_DIR/oslist/
+}
+
+list () {
+        find "$CONFIGURATION_DIR"/oslist/* -type f -print|awk  -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt"
+}
+
+checkfor_transmission () {
+        TRANSMISSION-CLI="$(whereis transmission-cli|cut -f2 -d" ")"
+}
+
+get_information () {
+	if [ ! -d "$CONFIGURATION_DIR"/oslist/"$1" ];then
+		echo "No operating system with that name exists. Note that all names are case sensitive."
+		exit
+	fi
+
+	if [ ! -e "$CONFIGURATION_DIR"/oslist/"$1"/osinfo.txt ];then
+		echo "Unfortunately the $CONFIGURATION_DIR/oslist/$1/osinfo.txt file hasn't been created yet."
+		exit
+	else
+		cat "$CONFIGURATION_DIR"/oslist/"$1"/osinfo.txt
+		exit
+	fi
+}
+
+update_oslist () {
+	echo "Updating oslist...."
+	echo "THIS IS FAKE FOR NOW!"
+}
+
+download_iso () {
+	if ( [ "$USE_TORRENT" = "1" ] && [ "$MAGNET" != "" ] && [ "$DOWNLOAD_DIR" != "" ] );then
+		transmission-cli -w "$DOWNLOAD_DIR" "$MAGNET"
+	fi
+
+	if ( [ "$USE_TORRENT" = "1" ] && [ "$TORRENT" != "" ]&& [ "$DOWNLOAD_DIR" != "" ] );then
+		transmission-cli -w "$DOWNLOAD_DIR" "$TORRENT"
+	fi
+
+	if ( [ "$USE_TORRENT" = "1" ] && [ "$MAGNET" != "" ] );then
+		transmission-cli -w $(pwd) "$MAGNET"
+	fi
+
+	if ( [ "$USE_TORRENT" = "1" ] && [ "$TORRENT" != "" ] );then
+		transmission-cli -w $(pwd) "$TORRENT"
+	else
+		if [ "$DOWNLOAD_DIR" = "" ];then
+			wget -c "$URL"
+		else
+			wget -c "$URL" -P "$DOWNLOAD_DIR"
+		fi
+	fi
+}
+
+sanity_check_configfile () {
+	if [ "$MAGNET" = "" ];then
+		echo "WARNING: No magnet link in $file."
+	fi
+	
+	if [ "$TORRENT" = "" ];then
+		echo "WARNING: No torrent link in $file."
+	fi
+
+
+	if [ "$URL" = "" ];then
+		echo "WARNING: Url is missing from $file. Something is wrong with the configuration file."
+		exit
+	fi
+}
+
+verify_file () {
+	echo "Verify downloaded file."
+	file=${URL##*/}
+
+	if [ "$SHA256SUM" != "$(sha256sum $file)" ];then
+		echo "Checksum of downloaded file matches."
+	elif [ "$SHA1SUM" != "$(sha1sum $file)" ];then
+		echo "Checksum of downloaded file matches."
+	else
+		echo "WARNING: This file could be a fake!" 
+		echo "Checksum of downloaded file does NOT match the checksum on record!"
+	fi
+}
+
+#Make sure that the configure directory exists and if it doesn't create it.
+mkdir -p $CONFIGURATION_DIR
+
+#check if help is being sought or if there are any arguments
+if [ "$1" = "--help" ] || [ "$1" = "-h" ] || [ "$#" -eq "0" ];then
+        show_help
+
+        if [ checkfor_transmission = "" ];then
+                echo "Transmission-cli isn't installed. If you wish to download via bittorrent please install it."
+        fi
+
+        exit
+fi
+
+
+OPTS=$(getopt -o hvlsui:d:t: --long help,version,list,lshort,update,information:,directory:,torrent: -n 'osget' -- "$@")
+eval set -- "$OPTS"
+
+while true; do
+	case "$1" in
+		-h | --help ) show_help; shift ;;
+		-v | --version ) echo $VERSION; shift ;;
+		-l | --list ) list; shift ;;
+		-s | --lshort ) list_short; shift ;;
+		-u | --update ) update_oslist; shift ;;
+		-i | --information ) get_information "$2"; shift 2 ;;
+		-d | --directory ) DOWNLOAD_DIR="$2"; shift 2 ;;
+		-t | --torrent ) USE_TORRENT="1"; shift ;;
+		-- ) shift; break;;
+		* ) break;;
+	esac
+done
+
+if [ checkfor_transmission = "" ];then
+	echo "WARNING: Transmission-cli isn't installed. If you wish to download via bittorrent please install it."
+fi
+
+for par in "$@";do
+        for file in $(find $CONFIGURATION_DIR/oslist/* -type f -print|awk -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt");do
+                osname=$(find "$CONFIGURATION_DIR" -name "$file"|awk -Foslist '{print $2}'|awk -F/ '{print $2}')
+                if [ "$par" = "$file" ];then
+                        source "$CONFIGURATION_DIR/oslist/$osname/$file"
+
+			sanity_check_configfile
+                        
+			if [ "$DOWNLOAD_DIR" != "" ];then
+				echo "Downloading $file to $DOWNLOAD_DIR"
+			else
+				echo "Downloading $file to current directory: $(pwd)"
+			fi
+			
+			download_iso
+			verify_file
+                fi
+        done
+        for file in $(find $CONFIGURATION_DIR/oslist/* -type f -print|awk -F$CONFIGURATION_DIR '{print $2}'|cut -f 3 -d/|uniq);do
+                osname=$(find "$CONFIGURATION_DIR" -name "$file"|awk -Foslist '{print $2}'|awk -F/ '{print $2}')
+                if [ "${par,,}" = "${osname,,}" ];then
+			source "$CONFIGURATION_DIR"/oslist/"$osname"/default
+
+			sanity_check_configfile
+
+			if [ "$DOWNLOAD_DIR" != "" ];then
+				echo "Downloading $file to $DOWNLOAD_DIR"
+			else
+				echo "Downloading $file to current directory: $(pwd)"
+			fi
+
+			download_iso
+			verify_file
+                fi
+
+        done
+done
+

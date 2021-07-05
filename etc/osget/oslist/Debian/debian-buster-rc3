@@ -1,0 +1,2 @@
+# This is the configuration file for osget to download Debian Bullseye alpha1 Buster netinstaller image
+URL="https://cdimage.debian.org/cdimage/bullseye_di_alpha1/amd64/iso-cd/debian-bullseye-DI-alpha1-amd64-netinst.iso"
