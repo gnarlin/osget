@@ -58,6 +58,10 @@ get_information () {
 	fi
 }
 
+validate_url() {
+	[[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]
+}
+
 update_oslist () {
 	echo "Updating oslist...."
 	echo "THIS IS FAKE FOR NOW!"
@@ -157,7 +161,7 @@ fi
 for par in "$@";do
         for file in $(find $CONFIGURATION_DIR/oslist/* -type f -print|awk -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt");do
                 osname=$(find "$CONFIGURATION_DIR" -name "$file"|awk -Foslist '{print $2}'|awk -F/ '{print $2}')
-                if [ "$par" = "$file" ];then
+                if [ "${par,,}" = "${file,,}" ];then
                         source "$CONFIGURATION_DIR/oslist/$osname/$file"
 
 			sanity_check_configfile
@@ -167,12 +171,18 @@ for par in "$@";do
 			else
 				echo "Downloading $file to current directory: $(pwd)"
 			fi
+
+			if !(validate_url $URL);then
+				echo "URL in $CONFIGURATION_DIR/oslist/$osname/$file invalid. Bailing..."
+				exit
+			fi
 			
 			download_iso
 			verify_file
                 fi
         done
-        for file in $(find $CONFIGURATION_DIR/oslist/* -type f -print|awk -F$CONFIGURATION_DIR '{print $2}'|cut -f 3 -d/|uniq);do
+
+	for file in $(find $CONFIGURATION_DIR/oslist/* -type f -print|awk -F$CONFIGURATION_DIR '{print $2}'|cut -f 3 -d/|uniq);do
                 osname=$(find "$CONFIGURATION_DIR" -name "$file"|awk -Foslist '{print $2}'|awk -F/ '{print $2}')
                 if [ "${par,,}" = "${osname,,}" ];then
 			source "$CONFIGURATION_DIR"/oslist/"$osname"/default
@@ -184,11 +194,15 @@ for par in "$@";do
 			else
 				echo "Downloading $file to current directory: $(pwd)"
 			fi
+			
+			if !(validate_url $URL);then
+				echo "URL in $CONFIGURATION_DIR/oslist/$osname/$file invalid. Bailing..."
+				exit
+			fi
 
 			download_iso
 			verify_file
                 fi
-
         done
 done
 
