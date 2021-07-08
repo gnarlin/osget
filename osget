@@ -108,7 +108,6 @@ sanity_check_configfile () {
 }
 
 verify_file () {
-	echo "Verify downloaded file."
 	file=${URL##*/}
 
 	if [ "$SHA256SUM" != "$(sha256sum $file)" ];then

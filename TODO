@@ -15,9 +15,10 @@ OSGET TODO
 0.9:
 * Add a script to verify that all URL's are still valid.
 * Add support for updating OS list from an internet mirror.
-* Add checksum checking for downloaded iso files
+* Add checksum checking for downloaded iso files DONE!
 * Create a .deb package and a .rpm package
-* Checksum support
+* Add multiple mirror support per ISO
+1.0:
 
 UNKOWN:
 * Swap to using aria2c for torrenting. Transmission-cli seems to be on life support.
