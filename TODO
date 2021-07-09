@@ -17,7 +17,8 @@ OSGET TODO
 * Add support for updating OS list from an internet mirror.
 * Add checksum checking for downloaded iso files DONE!
 * Create a .deb package and a .rpm package
-* Add multiple mirror support per ISO
+* Add multiple mirror support per ISO.
+* Validate URL only supports HTTP links for now. Needs to be fixed.
 1.0:
 
 UNKOWN:
