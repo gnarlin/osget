@@ -1,2 +1,2 @@
 # This is the configuration file for osget to download FreeBSD
-URL="https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.0/FreeBSD-12.0-RELEASE-amd64-dvd1.iso"
+URL1="https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.0/FreeBSD-12.0-RELEASE-amd64-dvd1.iso"

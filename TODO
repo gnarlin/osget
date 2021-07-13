@@ -2,7 +2,6 @@ OSGET TODO
 
 0.3:
 * Flesh out and make --information/-i more flexable, take more input etc. DONE!
-* Add a few more operating systems and versions to the pool.
 * Add DOWNLOAD_DIR functionality. Currently it does nothing. DONE!
 
 0.7:
@@ -13,13 +12,15 @@ OSGET TODO
 * Add support for bittorrent via transmission-cli. DONE!
 
 0.9:
-* Add a script to verify that all URL's are still valid.
+* Add a function to verify that all URL's are still valid in all OS configuration files.
 * Add support for updating OS list from an internet mirror.
 * Add checksum checking for downloaded iso files DONE!
-* Create a .deb package and a .rpm package
-* Add multiple mirror support per ISO.
+* Add multiple mirror support per ISO. DONE!
 * Validate URL only supports HTTP links for now. Needs to be fixed.
+
 1.0:
+* Add a few more operating systems and versions to the oslist.
 
 UNKOWN:
 * Swap to using aria2c for torrenting. Transmission-cli seems to be on life support.
+* Create a .deb package and a .rpm package

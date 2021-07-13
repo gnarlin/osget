@@ -101,7 +101,7 @@ sanity_check_configfile () {
 	fi
 
 
-	if [ "$URL" = "" ];then
+	if [ "$URL1" = "" ];then
 		echo "WARNING: Url is missing from $file. Something is wrong with the configuration file."
 		exit
 	fi
@@ -170,12 +170,18 @@ for par in "$@";do
 			else
 				echo "Downloading $file to current directory: $(pwd)"
 			fi
-
-			if !(validate_url $URL);then
-				echo "URL in $CONFIGURATION_DIR/oslist/$osname/$file invalid. Bailing..."
-				exit
-			fi
 			
+			for (( i=1 ; ; i++ )); do
+				n="URL${i}"                # the name of var
+				[ "${!n+x}" ] || break          # see if it exists
+				if (validate_url ${!n});then
+					URL="${!n}"
+					break
+				else
+					echo "WARNING: $n in $CONFIGURATION_DIR/oslist/$osname/$file is either not a valid url or it's down. Trying next mirror."
+				fi
+			done
+
 			download_iso
 			verify_file
                 fi
@@ -194,10 +200,16 @@ for par in "$@";do
 				echo "Downloading $file to current directory: $(pwd)"
 			fi
 			
-			if !(validate_url $URL);then
-				echo "URL in $CONFIGURATION_DIR/oslist/$osname/$file invalid. Bailing..."
-				exit
-			fi
+			for (( i=1 ; ; i++ )); do
+				n="URL${i}"                # the name of var
+				[ "${!n+x}" ] || break          # see if it exists
+				if (validate_url ${!n});then
+					URL="${!n}"
+					break
+				else
+					echo "WARNING: $n in $CONFIGURATION_DIR/oslist/$osname/default is either not a valid url or it's down. Trying next mirror."
+				fi
+			done
 
 			download_iso
 			verify_file
