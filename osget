@@ -24,9 +24,9 @@ osget is a command line utility to easily download different operating systems
                         Directory can also be specified in the configuration file.
 --torrent or -t		Use bittorrent to download.
 
-EXAMPLE: osget -d ~/Downloads/ Ubuntu-18.04.3-desktop
+EXAMPLE: osget -d ~/Downloads/ ubuntu-20.04.2.0-desktop-amd64
 You can also use the general names of Operating systems or distributions which will download the most common version.
-EXAMPLE: "osget Ubuntu" will download the 64 bit gnome 18.04.3 version. This is determined with a "default" symlink in the pool directories.
+EXAMPLE: "osget Ubuntu" will download the 64 bit gnome 20.04.2 version. This is determined with a "default" symlink in the pool directories.
 
 EOF
 }
@@ -40,7 +40,10 @@ list () {
 }
 
 checkfor_btclient () {
-        TRANSMISSION-CLI="$(whereis transmission-cli|cut -f2 -d" ")"
+        TRANSMISSION_CLI="$(whereis -b transmission-cli|awk -F" " '{print $2}')"
+	if [ "$TRANSMISSION_CLI" = "" ];then
+		echo "WARNING: Transmission-cli isn't installed. If you wish to download via bittorrent please install it."
+	fi
 }
 
 get_information () {
@@ -129,12 +132,6 @@ verify_file () {
 			echo "Checksum of downloaded file does NOT match the checksum on record!"
 		fi
 	fi
-
-
-
-
-
-
 }
 
 #Make sure that the configure directory exists and if it doesn't create it.
@@ -143,12 +140,8 @@ mkdir -p $CONFIGURATION_DIR
 #check if help is being sought or if there are any arguments
 if [ "$1" = "--help" ] || [ "$1" = "-h" ] || [ "$#" -eq "0" ];then
         show_help
-
-        if [ checkfor_btclient = "" ];then
-                echo "Transmission-cli isn't installed. If you wish to download via bittorrent please install it."
-        fi
-
-        exit
+	checkfor_btclient
+	exit
 fi
 
 
@@ -170,9 +163,7 @@ while true; do
 	esac
 done
 
-if [ checkfor_btclient = "" ];then
-	echo "WARNING: Transmission-cli isn't installed. If you wish to download via bittorrent please install it."
-fi
+checkfor_btclient
 
 for par in "$@";do
         for file in $(find $CONFIGURATION_DIR/oslist/* -type f -print|awk -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt");do
