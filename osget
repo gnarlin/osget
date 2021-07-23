@@ -110,14 +110,31 @@ sanity_check_configfile () {
 verify_file () {
 	file=${URL##*/}
 
-	if [ "$SHA256SUM" != "$(sha256sum $file)" ];then
-		echo "Checksum of downloaded file matches."
-	elif [ "$SHA1SUM" != "$(sha1sum $file)" ];then
-		echo "Checksum of downloaded file matches."
+	if [ "$DOWNLOAD_DIR" = "" ];then	
+		if [ "$SHA256SUM" != "$(sha256sum $file)" ];then
+			echo "Checksum of downloaded file matches."
+		elif [ "$SHA1SUM" != "$(sha1sum $file)" ];then
+			echo "Checksum of downloaded file matches."
+		else
+			echo "WARNING: This file could be a fake!" 
+			echo "Checksum of downloaded file does NOT match the checksum on record!"
+		fi
 	else
-		echo "WARNING: This file could be a fake!" 
-		echo "Checksum of downloaded file does NOT match the checksum on record!"
+		if [ "$SHA256SUM" != "$(sha256sum $DOWNLOAD_DIR/$file)" ];then
+			echo "Checksum of downloaded file matches."
+		elif [ "$SHA1SUM" != "$(sha1sum $DOWNLOAD_DIR/$file)" ];then
+			echo "Checksum of downloaded file matches."
+		else
+			echo "WARNING: This file could be a fake!" 
+			echo "Checksum of downloaded file does NOT match the checksum on record!"
+		fi
 	fi
+
+
+
+
+
+
 }
 
 #Make sure that the configure directory exists and if it doesn't create it.
