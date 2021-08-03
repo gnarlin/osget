@@ -47,16 +47,18 @@ checkfor_btclient () {
 }
 
 get_information () {
-	if [ ! -d "$CONFIGURATION_DIR"/oslist/"$1" ];then
-		echo "No operating system with that name exists. Note that all names are case sensitive."
+	local osname=$(find $CONFIGURATION_DIR/oslist/ -iname $1)
+	
+	if [ ! -d "$osname" ];then
+		echo "No operating system with that name exists."
 		exit
 	fi
 
-	if [ ! -e "$CONFIGURATION_DIR"/oslist/"$1"/osinfo.txt ];then
-		echo "Unfortunately the $CONFIGURATION_DIR/oslist/$1/osinfo.txt file hasn't been created yet."
+	if [ ! -e "$osname"/osinfo.txt ];then
+		echo "Unfortunately the "$osname"/osinfo.txt file hasn't been created yet."
 		exit
 	else
-		cat "$CONFIGURATION_DIR"/oslist/"$1"/osinfo.txt
+		cat $osname/osinfo.txt
 		exit
 	fi
 }
