@@ -116,18 +116,22 @@ verify_file () {
 	file=${URL##*/}
 
 	if [ "$DOWNLOAD_DIR" = "" ];then	
-		if [ "$SHA256SUM" != "$(sha256sum $file)" ];then
+		if [ "$SHA1SUM" = "$(sha1sum $file|awk '{print $1}')" ];then
 			echo "Checksum of downloaded file matches."
-		elif [ "$SHA1SUM" != "$(sha1sum $file)" ];then
+		elif [ "$SHA256SUM" = "$(sha256sum $file|awk '{print $1}')" ];then
+			echo "Checksum of downloaded file matches."
+		elif [ "$SHA512SUM" = "$(sha512sum $file|awk '{print $1}')" ];then
 			echo "Checksum of downloaded file matches."
 		else
 			echo "WARNING: This file could be a fake!" 
 			echo "Checksum of downloaded file does NOT match the checksum on record!"
 		fi
 	else
-		if [ "$SHA256SUM" != "$(sha256sum $DOWNLOAD_DIR/$file)" ];then
+		if [ "$SHA1SUM" = "$(sha1sum $DOWNLOAD_DIR/$file|awk '{print $1}')" ];then
 			echo "Checksum of downloaded file matches."
-		elif [ "$SHA1SUM" != "$(sha1sum $DOWNLOAD_DIR/$file)" ];then
+		elif [ "$SHA256SUM" = "$(sha256sum $DOWNLOAD_DIR/$file|awk '{print $1}')" ];then
+			echo "Checksum of downloaded file matches."
+		elif [ "$SHA512SUM" = "$(sha512sum $file|awk '{print $1}')" ];then
 			echo "Checksum of downloaded file matches."
 		else
 			echo "WARNING: This file could be a fake!" 
