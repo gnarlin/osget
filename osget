@@ -68,8 +68,19 @@ validate_url() {
 }
 
 update_oslist () {
-	echo "Updating oslist...."
-	echo "THIS IS FAKE FOR NOW!"
+
+	for (( i=1 ; ; i++ )); do
+		n="OSLIST_MIRROR${i}"                # the name of var
+		[ "${!n+x}" ] || break          # see if it exists
+		
+		echo "-------------------------------------------------"	
+		echo "Updating mirror $n to $CONFIGURATION_DIR/oslist/"	
+		echo "-------------------------------------------------"	
+		sudo wget -r -nH -q --show-progress --cut-dirs=1 --no-parent --reject="index.html*" --directory-prefix=$CONFIGURATION_DIR/oslist/ $(eval echo \$OSLIST_MIRROR${i}/) 
+		echo "-------------------------------------------------"	
+		echo "DONE!"
+		echo "-------------------------------------------------"	
+	done
 }
 
 download_iso () {
