@@ -1,0 +1,5 @@
+# This is the configuration file for osget to download FreeDOS 1.3-rc4
+
+# Urls for FreeDOS
+URL1="https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.3/previews/1.3-rc4/FD13-FE144m.zip"
+SHA512SUM="6c8effab41965bc3646e97dd17c079766d805adc37e669bd667331f6f41ab2ffb53f6745636d576d45e22ae60c7faa7d12abe7d5e8d44ac6a44487cf22e68db3"

@@ -45,3 +45,6 @@ Osget 0.9
 04.06.2021	Freyr Ólafsson	gnarlin@fripost.org
 	* Added bittorrent support
 	* Added -s or --lshort to display the general names of operating systems.
+Osget 1.0
+10.08.2021	Freyr Ólafsson	gnarlin@fripost.org
+	* Added online update of operating system list information with --update or -u.

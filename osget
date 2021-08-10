@@ -6,7 +6,7 @@
 #always use an absolute path for configuration directory
 #if you use a relative path you can only run osget from the directory the script is in.
 readonly CONFIGURATION_DIR="/etc/osget"
-VERSION="0.9"
+VERSION="1.0"
 
 source $CONFIGURATION_DIR/osget.conf
 
@@ -23,6 +23,7 @@ osget is a command line utility to easily download different operating systems
 --directory or -d       Specify directory to download to. Osget defaults to downloading to current directory.
                         Directory can also be specified in the configuration file.
 --torrent or -t		Use bittorrent to download.
+--update or -u		Update the repository of operating systems available to download from an online source.
 
 EXAMPLE: osget -d ~/Downloads/ ubuntu-20.04.2.0-desktop-amd64
 You can also use the general names of Operating systems or distributions which will download the most common version.
@@ -70,13 +71,13 @@ validate_url() {
 update_oslist () {
 
 	for (( i=1 ; ; i++ )); do
-		n="OSLIST_MIRROR${i}"                # the name of var
+		n="OSLIST_REPOSITORY${i}"                # the name of var
 		[ "${!n+x}" ] || break          # see if it exists
 		
 		echo "-------------------------------------------------"	
 		echo "Updating mirror $n to $CONFIGURATION_DIR/oslist/"	
 		echo "-------------------------------------------------"	
-		sudo wget -r -nH -q --show-progress --cut-dirs=1 --no-parent --reject="index.html*" --directory-prefix=$CONFIGURATION_DIR/oslist/ $(eval echo \$OSLIST_MIRROR${i}/) 
+		sudo wget -r -nH -q --show-progress --cut-dirs=1 --no-parent --reject="index.html*" --directory-prefix=$CONFIGURATION_DIR/oslist/ $(eval echo \$OSLIST_REPOSITORY${i}/) 
 		echo "-------------------------------------------------"	
 		echo "DONE!"
 		echo "-------------------------------------------------"	
