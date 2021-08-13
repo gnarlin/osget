@@ -1,0 +1,7 @@
+# This is the configuration file for osget to download Ubuntu 18.04.5
+
+# Urls for ubuntu via http
+URL1="https://releases.ubuntu.com/18.04.5/ubuntu-18.04.5-desktop-amd64.iso"
+TORRENT="https://releases.ubuntu.com/18.04.5/ubuntu-18.04.5-live-server-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:94a315e2cf8015b2f635d79aab592e6db557d5ea"
+SHA256SUM="f295570badb09a606d97ddfc3421d7bf210b4a81c07ba81e9c040eda6ddea6a0"

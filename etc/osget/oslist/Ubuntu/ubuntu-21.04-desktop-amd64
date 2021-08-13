@@ -1,0 +1,7 @@
+# This is the configuration file for osget to download Ubuntu 21.04
+
+# Urls for ubuntu
+URL1="https://releases.ubuntu.com/21.04/ubuntu-21.04-desktop-amd64.iso"
+TORRENT="https://releases.ubuntu.com/21.04/ubuntu-21.04-desktop-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:64a980abe6e448226bb930ba061592e44c3781a1"
+SHA256SUM="fa95fb748b34d470a7cfa5e3c1c8fa1163e2dc340cd5a60f7ece9dc963ecdf88"

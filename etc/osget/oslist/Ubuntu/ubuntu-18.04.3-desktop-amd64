@@ -1,4 +1,0 @@
-# This is the configuration file for osget to download Ubuntu 18.04.03
-
-# Urls for ubuntu via http
-URL1="http://releases.ubuntu.com/18.04.3/ubuntu-18.04.3-desktop-amd64.iso"
