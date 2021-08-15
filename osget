@@ -41,6 +41,7 @@ list_osnames () {
 
 search () {
         find "$CONFIGURATION_DIR"/oslist/* -type f -print|awk  -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt"|grep -i $1
+	ls -1 "$CONFIGURATION_DIR"/oslist/ |grep -i $1
 }
 
 list () {

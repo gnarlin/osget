@@ -1,0 +1,7 @@
+# This is the configuration file for osget to download Ubuntu 16.04.7
+
+# Urls for ubuntu
+URL1="https://releases.ubuntu.com/16.04.7/ubuntu-16.04.7-desktop-amd64.iso"
+TORRENT="https://releases.ubuntu.com/16.04.7/ubuntu-16.04.7-desktop-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:e3c92699cc61f61fbb324e2c0a113ae9105a01a7"
+SHA256SUM="8ba7e2687fb8a2152504475e92e489aace543059fd4ba7ffe10111c42394853b"

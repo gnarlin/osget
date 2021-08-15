@@ -1,0 +1,7 @@
+# This is the configuration file for osget to download Ubuntu 20.04.2.0
+
+# Urls for ubuntu
+URL1="https://releases.ubuntu.com/20.10/ubuntu-20.10-desktop-amd64.iso"
+TORRENT="https://releases.ubuntu.com/20.10/ubuntu-20.10-desktop-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:5fff0e1c8ac414860310bcc1cb76ac28e960efbe"
+SHA256SUM="3ef833828009fb69d5c584f3701d6946f89fa304757b7947e792f9491caa270e"

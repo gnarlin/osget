@@ -2,4 +2,5 @@
 
 # Urls for ubuntu via http
 URL1="http://releases.ubuntu.com/19.10/ubuntu-19.10-desktop-amd64.iso"
-
+TORRENT="http://old-releases.ubuntu.com/releases/19.10/ubuntu-19.10-desktop-amd64.iso.torrent"
+SHA256SUM="96a8095001d447bbb9078925d72f7a77a3f62fbd78460093759af4394ce83d79"

@@ -1,0 +1,7 @@
+# This is the configuration file for osget to download Ubuntu 14.04.6
+
+# Urls for ubuntu
+URL1="https://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-desktop-amd64.iso"
+TORRENT="https://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-desktop-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:4a03da39750c4bdd0febb66d8b138ceea5993faa"
+SHA256SUM="bcc02554c37d438545658be7964e1bc05bdb11289ae16bfbf94626b80d42656f"
