@@ -19,7 +19,7 @@ osget is a command line utility to easily download different operating systems
 --version or -v         Shows the current program version.
 --list or -l            Shows a list of all available operating systems including different releases and versions.
 --listosnames or -o	Shows a list of all available operating systems by their generic names
-			(ie Debian and not debian-10.10.0-amd64-netinst etc.)
+			(ie Debian and not debian-11.0.0-amd64-netinst etc.)
 --information or -i     Shows general information and description of the operating system.
 --directory or -d       Specify directory to download to. Osget defaults to downloading to current directory.
                         Directory can also be specified in the configuration file.
@@ -27,10 +27,10 @@ osget is a command line utility to easily download different operating systems
 --torrent or -t		Use bittorrent to download.
 --update or -u		Update the repository of operating systems available to download from an online source.
 
-EXAMPLE: osget -d ~/Downloads/ ubuntu-20.04.2.0-desktop-amd64
+EXAMPLE: osget -d ~/Downloads/ debian-11.0.0-amd64-netinst
 You can also use the generic names of Operating systems which will download the most common version.
 "osget ubuntu" will download the most recent long term release. 
-This is determined with a "default" symlink in the pool directories.
+This is determined with a "default" symlink in the oslist subdirectories.
 
 EOF
 }
