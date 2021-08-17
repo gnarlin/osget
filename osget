@@ -8,6 +8,7 @@
 readonly CONFIGURATION_DIR="/etc/osget"
 VERSION="1.0"
 
+# shellcheck source=/etc/osget/osget.conf
 source $CONFIGURATION_DIR/osget.conf
 
 show_help () {
@@ -23,7 +24,7 @@ osget is a command line utility to easily download different operating systems
 --information or -i     Shows general information and description of the operating system.
 --directory or -d       Specify directory to download to. Osget defaults to downloading to current directory.
                         Directory can also be specified in the configuration file.
---search or -s		Search from all available full operating system names.
+--search or -s		Search from all available operating system names.
 --torrent or -t		Use bittorrent to download.
 --update or -u		Update the repository of operating systems available to download from an online source.
 
@@ -40,8 +41,8 @@ list_osnames () {
 }
 
 search () {
-        find "$CONFIGURATION_DIR"/oslist/* -type f -print|awk  -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt"|grep -i $1
-	ls -1 "$CONFIGURATION_DIR"/oslist/ |grep -i $1
+        find "$CONFIGURATION_DIR"/oslist/* -type f -print|awk  -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt"|grep -i "$1"
+	ls -1 "$CONFIGURATION_DIR"/oslist/ |grep -i "$1"
 }
 
 list () {
@@ -56,7 +57,7 @@ checkfor_btclient () {
 }
 
 get_information () {
-	local osname=$(find $CONFIGURATION_DIR/oslist/ -iname $1)
+	local osname=$(find $CONFIGURATION_DIR/oslist/ -iname "$1")
 	
 	if [ ! -d "$osname" ];then
 		echo "No operating system with that name exists."
