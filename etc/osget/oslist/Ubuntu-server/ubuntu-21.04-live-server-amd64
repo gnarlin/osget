@@ -1,0 +1,8 @@
+# This is the configuration file for osget to download Ubuntu-server 20.04.2.0
+
+# Urls for ubuntu
+URL1="https://releases.ubuntu.com/21.04/ubuntu-21.04-live-server-amd64.iso"
+URL2="https://ubuntu.hysing.is/ubuntu-releases/20.04/ubuntu-20.04.2-live-server-amd64.iso"
+TORRENT="https://releases.ubuntu.com/21.04/ubuntu-21.04-live-server-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:126f82fb33119d2acf93a16cfba6eb1c5787a59f"
+SHA256SUM="e4089c47104375b59951bad6c7b3ee5d9f6d80bfac4597e43a716bb8f5c1f3b0"
