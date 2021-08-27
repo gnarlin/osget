@@ -1,7 +1,7 @@
 #! /bin/bash
 #
 # file: installer.sh
-# This is osget version 0.9
+# This is osget version 1.1 
 # written by Freyr Gunnar Ólafsson
 # This program is licenced under the GPL version 3 or higher (if available)
 
@@ -20,7 +20,7 @@ function id_bin ()
 
 checkif_root ()
 {
-        if [ `id -u` -eq 0 ];then
+        if [ "$(id -u)" -eq 0 ];then
                 return 0
         else
                 echo "You need root authority!"
@@ -31,7 +31,7 @@ checkif_root ()
 
 #This is where osget will be installed.
 TARGET="/usr/bin"
-VERSION="0.9"
+VERSION="1.1"
 ID=""
 
 #check if the files exist
@@ -58,7 +58,7 @@ fi
 if [ "$1" = "--install" ];then
 	checkif_root
 	#check if files are already installed
-	if ( [ -d /etc/osget ] || [ -f $TARGET/osget ] ); then
+	if [ -d /etc/osget ] || [ -f $TARGET/osget ]; then
 		echo "osget has already been installed!"
 		echo "Please make sure to uninstall all files belonging to any and all old versions of osget before installing this version."
 		echo "Use --force-install if you are determined to clobber existing files."
@@ -91,7 +91,7 @@ if [ "$1" = "--force-install" ];then
 	echo "Force install complete."
 fi
 
-if ( [ "$1" = "--help" ] || [ "$1" = "-h" ] || [ "$#" = "0" ] );then
+if [ "$1" = "--help" ] || [ "$1" = "-h" ] || [ "$#" = "0" ];then
 	echo "--help or no parameters gives you this helpful message."
 	echo "--install will not clobber any files."
 	echo "--force-install will install AND override files if there are any."

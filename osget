@@ -6,7 +6,7 @@
 #always use an absolute path for configuration directory
 #if you use a relative path you can only run osget from the directory the script is in.
 readonly CONFIGURATION_DIR="/etc/osget"
-VERSION="1.0"
+VERSION="1.1"
 
 # shellcheck source=/etc/osget/osget.conf
 source $CONFIGURATION_DIR/osget.conf
@@ -152,7 +152,7 @@ verify_file () {
 			echo "Checksum of downloaded file matches."
 		elif [ "$SHA256SUM" = "$(sha256sum $DOWNLOAD_DIR/$file|awk '{print $1}')" ];then
 			echo "Checksum of downloaded file matches."
-		elif [ "$SHA512SUM" = "$(sha512sum $file|awk '{print $1}')" ];then
+		elif [ "$SHA512SUM" = "$(sha512sum "$DOWNLOAD_DIR"/"$file"|awk '{print $1}')" ];then
 			echo "Checksum of downloaded file matches."
 		else
 			echo "WARNING: This file could be a fake!" 
@@ -197,6 +197,7 @@ for par in "$@";do
         for file in $(find $CONFIGURATION_DIR/oslist/* -type f -print|awk -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt");do
                 osname=$(find "$CONFIGURATION_DIR" -name "$file"|awk -Foslist '{print $2}'|awk -F/ '{print $2}')
                 if [ "${par,,}" = "${file,,}" ];then
+			MATCH_FOUND="1"
                         source "$CONFIGURATION_DIR/oslist/$osname/$file"
 
 			sanity_check_configfile
@@ -226,6 +227,7 @@ for par in "$@";do
 	for file in $(find $CONFIGURATION_DIR/oslist/* -type f -print|awk -F$CONFIGURATION_DIR '{print $2}'|cut -f 3 -d/|uniq);do
                 osname=$(find "$CONFIGURATION_DIR" -name "$file"|awk -Foslist '{print $2}'|awk -F/ '{print $2}')
                 if [ "${par,,}" = "${osname,,}" ];then
+			MATCH_FOUND="1"
 			source "$CONFIGURATION_DIR"/oslist/"$osname"/default
 
 			sanity_check_configfile
@@ -251,5 +253,10 @@ for par in "$@";do
 			verify_file
                 fi
         done
+	
+	if [ "$MATCH_FOUND" != "1" ];then
+		echo "No operating system in $CONFIGURATION_DIR/oslist/ found with that name."
+		echo "Run: osget --help or -h for help."
+	fi
 done
 

@@ -1,0 +1,8 @@
+# This is the configuration file for osget to download Ubuntu 20.04.3.0
+
+# Urls for ubuntu
+URL1="https://releases.ubuntu.com/20.04.3/ubuntu-20.04.3-desktop-amd64.iso"
+URL2="https://ubuntu.hysing.is/ubuntu-releases/20.04.3/ubuntu-20.04.3-desktop-amd64.iso"
+TORRENT="https://releases.ubuntu.com/20.04.3/ubuntu-20.04.3-desktop-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:b26c81363ac1a236765385a702aec107a49581b5"
+SHA256SUM="5fdebc435ded46ae99136ca875afc6f05bde217be7dd018e1841924f71db46b5"

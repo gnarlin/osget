@@ -1,0 +1,27 @@
+HOMEPAGE="https://www.freedombox.org"
+MIRRORLIST="https://launchpad.net/ubuntu/+cdmirrors"
+TORRENTLIST="https://torrent.ubuntu.com/tracker_index"
+DONATE="https://freedomboxfoundation.org/donate/"
+FORUM="https://discuss.freedombox.org/"
+MAILING-LIST="https://alioth-lists.debian.net/cgi-bin/mailman/listinfo/freedombox-discuss"
+GITLAB="https://salsa.debian.org/freedombox-team"
+IRC_SERVER="irc.debian.org"
+IRC_CHANNEL="#freedombox"
+MATRIX="#freedombox:matrix.org"
+
+Run your digital services from your home.
+FreedomBox is a private server for non-experts: it lets you install and configure server applications with only a few clicks. 
+It runs on cheap hardware of your choice, uses your internet connection and power, and is under your control. 
+
+Launched in 2010 by Prof. Eben Moglen, FreedomBox is a global project to empower regular people to reassert control over the infrastructure of the internet. 
+FreedomBox empowers its users to avoid the data mining, censorship and surveillance by centralized silos that characterize the web of today. 
+It makes web servers personal, affordable and manageable, so that a user can host necessary web services at home on a device they own, powered by free software they can trust.
+
+FreedomBox is made up of two things: a free and open source software system and inexpensive hardware. 
+The costs of computer processors and network bandwidth have both fallen to such low levels that hosting your own digital services is now affordable.
+
+FreedomBox is a Debian Pure Blend, which means that it distributes its software through Debian repositories. 
+By building FreedomBox directly within the Debian GNU/Linux ecosystem, we benefit from the contributions of the 1,000+ active Debian contributors, 
+in addition to Debian's high standards for quality assurance and security. 
+FreedomBox's major contribution to the Debian ecosystem is providing a user interface that simplifies and automates otherwise complicated administrative tasks 
+associated with running a server, like installing applications and applying updates.

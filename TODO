@@ -18,9 +18,11 @@ OSGET TODO
 * Add multiple mirror support per ISO. DONE!
 
 1.0:
-* Add a few more operating systems and versions to the oslist.
+* Add a few more operating systems and versions to the oslist. DONE!
 
 UNKOWN:
 * Swap to using aria2c for torrenting. Transmission-cli seems to be on life support.
-* Create a .deb package and a .rpm package
+* Create a .deb package and a .rpm package.
 * Validate URL only supports HTTP links for now. Needs to be fixed.
+* Finish adding every version, architecture and edition of the most major distros.
+* Add GPG verification/validation support.
