@@ -1,0 +1,11 @@
+HOMEPAGE="https://www.parabola.nu/"
+FORUM="https://labs.parabola.nu/projects/parabola-community-forum"
+WIKI="https://wiki.parabola.nu/"
+PACKAGES="https://www.parabola.nu/packages/"
+ISSUES="https://labs.parabola.nu/"
+PROJECTS="https://projects.parabola.nu/"
+DOWNLOAD="https://www.parabola.nu/download/"
+IRC="irc://chat.freenode.net#parabola"
+MAILING-LISTS="https://lists.parabola.nu//mailman/listinfo/"
+
+The Parabola project is a community-driven, "labour-of-love" effort to maintain a 100% free (as in: freedom) operating system distribution that is lean, clean, and hackable. Based on the Arch distribution, Parabola is a complete, user-friendly operating system, suitable for general "everyday" use, while retaining Arch's "power-user" charm. Parabola adheres to the GNU Free System Distribution Guidelines (FSDG); which requires source code for every part of the system to be freely available, modifyable, and re-distributable. All Parabola packages are built from source, in clean chroots, and with networking disabled, in order to replace any software and artworks in the standard Arch system which fall outside the GNU guidelines. LiveISOs, installers, and packages are provided for the armv7h, i686, and x86_64 CPU architectures.
