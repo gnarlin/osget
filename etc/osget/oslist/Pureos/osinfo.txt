@@ -1,0 +1,9 @@
+HOMEPAGE="https://pureos.net/"
+DOWNLOADS="https://pureos.net/download"
+SOURCE_CODE="http://repo.pureos.net/pureos/pool/main/"
+BUG_TRACKER="https://tracker.pureos.net/"
+WIKI="https://tracker.pureos.net/w/"
+REPO_MIRRORS="https://tracker.pureos.net/w/installation_guide/mirrors/"
+
+A user friendly, secure and freedom respecting OS for your daily usage.
+With PureOS, you are the only one in control of your digital life. 

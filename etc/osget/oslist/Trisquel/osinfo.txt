@@ -1,0 +1,7 @@
+HOMEPAGE="https://trisquel.info"
+DOWNLOAD="https://trisquel.info/en/download"
+DOCUMENTATION="https://trisquel.info/en/wiki"
+FORUM="https://trisquel.info/en/forum"
+DONATE="https://trisquel.info/en/donate"
+
+Trisquel GNU/Linux is a fully free operating system for home users, small enterprises and educational centers.
