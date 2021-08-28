@@ -1,0 +1,4 @@
+# This is the Osget configuration file for downloading clonezilla-live-2.7.3-19-amd64
+URL1="https://dotsrc.dl.osdn.net/osdn/clonezilla/75762/clonezilla-live-2.7.3-19-amd64.iso"
+TORRENT="https://distrowatch.com/dwres/torrents/clonezilla-live-2.7.3-19-amd64.iso.torrent"
+SHA512SUM="387395dae13ea3b2c28e2c176a499ba6b84b1ce2e17c17072e20c02d7dd05449b656488d4b2883da89156f85d7afb41ec2f3016c9b05ed58602de4ce8de108ba"

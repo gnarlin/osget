@@ -1,0 +1,7 @@
+HOMEPAGE="https://clonezilla.org/"
+
+Clonezilla is a free and open-source disk cloning, disk imaging, data recovery, and
+deployment computer program. Clonezilla is designed by Steven Shiau and developed
+by the NCHC Free Software Labs in Taiwan. Clonezilla SE provides multicast support
+similar to Norton Ghost Corporate Edition.
+

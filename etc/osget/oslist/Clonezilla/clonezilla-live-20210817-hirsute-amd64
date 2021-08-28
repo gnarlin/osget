@@ -1,0 +1,3 @@
+# This is the Osget configuration file to download clonezilla-live-20210817-hirsute-amd64
+URL1="https://osdn.mirror.constant.com//clonezilla/75764/clonezilla-live-20210817-hirsute-amd64.iso"
+SHA512SUM="512cc2e5c3fa35c5ecbe4649c7249ef6cd21ec922b1191adb58822f1817f0edcd1bc0845486f13009dd87aaf540915672054cc5f0f98126fbd0b1f0378f990c9"
