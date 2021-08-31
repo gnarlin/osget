@@ -1,0 +1,24 @@
+HOMEPAGE="https://lubuntu.me/"
+BLOG="https://lubuntu.me/blog/"
+DOWNLOADS="https://lubuntu.me/downloads/"
+PHABRICATOR="https://phab.lubuntu.me/"
+WIKI="https://phab.lubuntu.me/w/"
+MANUAL="https://manual.lubuntu.me/"
+FORUM="https://discourse.lubuntu.me/"
+LINKS="https://lubuntu.me/links/"
+APPAREL="https://teespring.com/stores/lubuntu"
+DONATE="https://lubuntu.me/donate/"
+
+Lubuntu is a lightweight Linux distribution based on Ubuntu and uses the LXQt desktop
+environment in place of Ubuntu's GNOME desktop. Lubuntu was originally touted as
+being "lighter, less resource hungry and more energy-efficient", but now aims to
+be "a functional yet modular distribution focused on getting out of the way and
+letting users use their computer". Lubuntu originally used the LXDE desktop, but
+moved to the LXQt desktop with the release of Lubuntu 18.10 in October 2018, due
+to the slow development of LXDE, losing support for GTK 2 as well as the more active
+and stable LXQt development without Gnome dependencies. The name Lubuntu is a portmanteau
+of LXQt and Ubuntu. The LXQt name derives from the merger of the LXDE and Razor-qt
+projects, while the word Ubuntu means "humanity towards others" in the Zulu and
+Xhosa languages. Lubuntu received official recognition as a formal member of the
+Ubuntu family on 11 May 2011, commencing with Lubuntu 11.10, which was released
+on 13 October 2011.
