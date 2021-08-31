@@ -48,3 +48,6 @@ Osget 0.9
 Osget 1.0
 10.08.2021	Freyr Ólafsson	gnarlin@fripost.org
 	* Added online update of operating system list information with --update or -u.
+30.08.2021	Freyr Ólafsson	gnarlin@fripost.org
+	* Changed --update to use ftp instead of http since wget can't download symlinks 
+	over http and the "defalt symlinks weren't being copied.

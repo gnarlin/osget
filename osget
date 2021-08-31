@@ -6,7 +6,7 @@
 #always use an absolute path for configuration directory
 #if you use a relative path you can only run osget from the directory the script is in.
 readonly CONFIGURATION_DIR="/etc/osget"
-VERSION="1.1"
+VERSION="1.2"
 
 # shellcheck source=/etc/osget/osget.conf
 source $CONFIGURATION_DIR/osget.conf
@@ -86,7 +86,7 @@ update_oslist () {
 		echo "-------------------------------------------------"	
 		echo "Updating mirror $n to $CONFIGURATION_DIR/oslist/"	
 		echo "-------------------------------------------------"	
-		sudo wget -r -nH -q --show-progress --cut-dirs=1 --no-parent --reject="index.html*" --directory-prefix=$CONFIGURATION_DIR/oslist/ $(eval echo \$OSLIST_REPOSITORY${i}/) 
+		sudo wget -r -nH -q --show-progress --no-parent --retr-symlinks=no --directory-prefix=$CONFIGURATION_DIR/ $(eval echo \$OSLIST_REPOSITORY${i}/) 
 		echo "-------------------------------------------------"	
 		echo "DONE!"
 		echo "-------------------------------------------------"	

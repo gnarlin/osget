@@ -1,7 +1,7 @@
 #! /bin/bash
 #
 # file: installer.sh
-# This is osget version 1.1 
+# This is osget version 1.2
 # written by Freyr Gunnar Ólafsson
 # This program is licenced under the GPL version 3 or higher (if available)
 
@@ -31,7 +31,7 @@ checkif_root ()
 
 #This is where osget will be installed.
 TARGET="/usr/bin"
-VERSION="1.1"
+VERSION="1.2"
 ID=""
 
 #check if the files exist
