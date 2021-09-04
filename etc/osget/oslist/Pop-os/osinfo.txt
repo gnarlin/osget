@@ -1,0 +1,16 @@
+HOMEPAGE="https://pop.system76.com/"
+SUPPORT="https://support.system76.com/"
+
+Pop!_OS is a free and open-source Linux distribution, based upon Ubuntu, featuring
+a custom GNOME desktop. The distribution is developed by American Linux computer
+manufacturer System76. Pop!_OS is primarily built to be bundled with the computers
+built by System76, but can also be downloaded and installed on most computers. Pop!_OS
+provides full out-of-the-box support for both AMD and Nvidia GPUs. It is regarded
+as an easy distribution to set up for gaming, mainly due to its built-in GPU support.
+Pop!_OS provides default disk encryption, streamlined window and workspace management,
+keyboard shortcuts for navigation as well as built-in power management profiles.
+The latest releases also have packages that allow for easy setup for TensorFlow
+and CUDA. Pop!_OS is maintained primarily by System76, with the release version
+source code hosted in a GitHub repository. Unlike many other Linux distributions,
+it is not community-driven, although outside programmers can contribute, view and
+modify the source code. They can also build custom ISO images and redistribute them
