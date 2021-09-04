@@ -1,0 +1,17 @@
+HOMEPAGE="https://getsol.us/home/"
+ABOUT="https://getsol.us/solus/about"
+BLOG="https://getsol.us/blog"
+DOWNLOAD="https://getsol.us/download"
+FUNDING="https://opencollective.com/getsolus"
+HELP_CENTER="https://getsol.us/help-center/home"
+FORUM="https://discuss.getsol.us/"
+GET_INVOLVED="https://getsol.us/articles/contributing/getting-involved/en/"
+
+Solus (previously known as Evolve OS) is an independently developed operating system
+for the x86-64 architecture based on the Linux kernel and a choice of the homegrown
+Budgie desktop environment, GNOME, MATE or KDE Plasma as the desktop environment.
+Its package manager, eopkg, is based on the PiSi package management system from
+Pardus Linux, and it has a semi-rolling release model, with new package updates
+landing in the stable repository every Friday. The developers of Solus have stated
+that Solus is intended exclusively for use on personal computers and will not include
+software that is only useful in enterprise or server environments.
