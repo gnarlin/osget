@@ -1,0 +1,15 @@
+HOMEPAGE="https://www.qubes-os.org"
+INTRODUCTION="https://www.qubes-os.org/intro/"
+DOWNLOADS="https://www.qubes-os.org/downloads/"
+DOCUMENTATION="https://www.qubes-os.org/doc/"
+NEWS="https://www.qubes-os.org/news/"
+TEAM="https://www.qubes-os.org/team/"
+DONATE="https://www.qubes-os.org/donate/"
+
+Qubes OS is a security-focused desktop operating system that aims to provide security
+through isolation. Virtualization is performed by Xen, and user environments can
+be based on Fedora, Debian, Whonix, and Microsoft Windows, among other operating
+systems. Systems like Qubes are referred to in academia as Converged Multi-Level
+Secure (MLS) Systems. Other proposals of similar systems have surfaced and SecureView
+is a commercial competitor, however Qubes OS is the only system of the kind actively
+being developed under a FOSS license.
