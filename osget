@@ -10,6 +10,7 @@ if [ -z "$OSDEV_CONFIGURATION_DIR"  ]; then
 else
 	readonly CONFIGURATION_DIR="$OSDEV_CONFIGURATION_DIR"
 fi
+
 VERSION="1.2"
 
 # shellcheck source=/etc/osget/osget.conf
