@@ -3,4 +3,4 @@
 # Urls for Arch via http
 URL1="https://mirror.rackspace.com/archlinux/iso/2021.08.01/archlinux-2021.08.01-x86_64.iso"
 MAGNET="magnet:?xt=urn:btih:53a9a99871a7beab25fc1b9d83713d696613aa65&dn=archlinux-2021.08.01-x86_64.iso"
-SHA1SUM="4904c8a6df8bac8291b7b7582c26c4da9439f1cf"
+SHA256SUM="601560a815c191a44485743b1636de7ff7ecd09937ad65bfe6ad15248f10dd30"
