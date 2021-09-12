@@ -5,7 +5,11 @@
 
 #always use an absolute path for configuration directory
 #if you use a relative path you can only run osget from the directory the script is in.
-readonly CONFIGURATION_DIR="/etc/osget"
+if [ -z "$OSDEV_CONFIGURATION_DIR"  ]; then
+	readonly CONFIGURATION_DIR="/etc/osget"
+else
+	readonly CONFIGURATION_DIR="$OSDEV_CONFIGURATION_DIR"
+fi
 VERSION="1.2"
 
 # shellcheck source=/etc/osget/osget.conf
