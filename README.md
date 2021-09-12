@@ -7,7 +7,7 @@ cd osget <br>
 sudo ./install.sh --install <br>
 <br>
 #You can also use the debian package on Debian based distributions: <br>
-sudo apt install ./osget_1.2_all.deb <br>
+sudo apt install ./osget_1.3_all.deb <br>
 <br>
 #Or if you want to use the tradition method: <br>
-sudo dpkg -i osget_1.2_all.deb <br>
+sudo dpkg -i osget_1.3_all.deb <br>

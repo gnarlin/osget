@@ -51,3 +51,10 @@ Osget 1.0
 30.08.2021	Freyr Ólafsson	gnarlin@fripost.org
 	* Changed --update to use ftp instead of http since wget can't download symlinks 
 	over http and the "defalt symlinks weren't being copied.
+Osget 1.3
+12.09.2021	Davíð Steinn Geirsson	dsg@dsg.is
+	* Allow overriding CONFIGURATION_DIR through environment variable.
+	* Check hashes in order from stronger to weaker, drop support for SHA1.
+	* Use env(1) to find path to bash.	
+12.09.2021	Freyr Ólafsson	gnarlin@fripost.org
+	* Updated oslist with more OS images and updated man page.

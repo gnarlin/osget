@@ -20,6 +20,9 @@ OSGET TODO
 1.0:
 * Add a few more operating systems and versions to the oslist. DONE!
 
+2.0:
+Buy and setup a domain for osget to host the official oslist on.
+
 UNKOWN:
 * Swap to using aria2c for torrenting. Transmission-cli seems to be on life support.
 * Create a .deb package and a .rpm package.
