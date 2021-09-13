@@ -1,7 +1,7 @@
-# Osget <br>
-## Downloads ISO files for different operating systems. A package manager for operating systems image files. <br>
-### Installation: <br>
-<br>
+# Osget
+## Downloads ISO files for different operating systems. A package manager for operating systems image files.
+### Installation:
+
 git clone https://github.com/gnarlin/osget.git <br>
 cd osget <br>
 sudo ./install.sh --install <br>
