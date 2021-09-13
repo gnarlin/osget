@@ -1,0 +1,4 @@
+HOMEPAGE="https://endeavouros.com/"
+MIRRORLIST=""
+
+A terminal-centric distro with a vibrant and friendly community at its core

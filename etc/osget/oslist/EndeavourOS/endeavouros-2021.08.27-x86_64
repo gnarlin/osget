@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download EndeavourOS
+
+# Urls for EndeavourOS via http
+URL1="https://github.com/endeavouros-team/ISO/releases/download/1-EndeavourOS-ISO-releases-archive/endeavouros-2021.08.27-x86_64.iso"
+MAGNET="magnet:?xt=urn:btih:73c3f13534d180424fd2a625fbe83f363cad6791&dn=endeavouros-2021.08.27-x86_64.iso&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=http%3a%2f%2fannounce.opensharing.org%3a2710%2fannounce&tr=http%3a%2f%2fbigtorrent.org%3a2710%2fannounce&tr=http%3a%2f%2fmegapeer.org%3a6969%2fannounce&ws=https%3a%2f%2fmirror.alpix.eu%2fendeavouros%2fiso%2fendeavouros-2021.08.27-x86_64.iso"
+SHA512SUM="7eb0eeb9f6b286f574b4e3d8dc39863f2512894ffa890568e545f66efa13408c424395ec6a0ba05a1308a8caf9cafce850337eec994225c9fd918ea90406f8a6"
