@@ -1,0 +1,3 @@
+HOMEPAGE="https://www.kali.org/"
+
+The Kali Linux penetration testing platform contains a vast array of tools and utilities. From information gathering to final reporting, Kali Linux enables security and IT professionals to assess the security of their systems.
