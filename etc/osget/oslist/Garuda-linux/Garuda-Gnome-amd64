@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download Garuda-XFCE-amd64
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/gnome/210809/garuda-gnome-linux-zen-210809.iso"
+MAGNET="magnet:?xt=urn:btih:621dba18345a04de16a8e8992c946b270b045004&dn=garuda-gnome-linux-zen-210809.iso&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=http%3a%2f%2ffosstorrents.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&ws=https%3a%2f%2fmirrors.fossho.st%2fgaruda%2fiso%2fgaruda%2fgnome%2f210809%2fgaruda-gnome-linux-zen-210809.iso&ws=https%3a%2f%2fmirrors.fosshost.org%2fgaruda%2fiso%2fgaruda%2fgnome%2f210809%2fgaruda-gnome-linux-zen-210809.iso"
+SHA256SUM="d947a18a67f5366fe79848ce4afc4f5593d3443b07323758cb48834a3c233047"

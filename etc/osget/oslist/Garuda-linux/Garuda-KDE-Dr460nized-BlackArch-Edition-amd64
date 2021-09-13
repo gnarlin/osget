@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download Garuda-KDE-Dr460nized-BlackArch-Edition-amd64
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/dr460nized-blackarch/210809/garuda-dr460nized-blackarch-linux-zen-210809.iso"
+MAGNET="magnet:?xt=urn:btih:50182e8bc9ea91cb667de67c7d3c6f7eba022463&dn=garuda-dr460nized-blackarch-linux-zen-210809.iso&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=http%3a%2f%2ffosstorrents.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&ws=https%3a%2f%2fmirrors.fossho.st%2fgaruda%2fiso%2fgaruda%2fdr460nized-blackarch%2f210809%2fgaruda-dr460nized-blackarch-linux-zen-210809.iso&ws=https%3a%2f%2fmirrors.fosshost.org%2fgaruda%2fiso%2fgaruda%2fdr460nized-blackarch%2f210809%2fgaruda-dr460nized-blackarch-linux-zen-210809.iso"
+SHA256SUM="e205579d80b0dc8793573acee656c1f8ec4ff2260471696d81ff65c9a7968abe"

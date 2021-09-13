@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download Garuda-LXQT-Kwin-amd64
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/210809/garuda-lxqt-kwin-linux-zen-210809.iso"
+MAGNET="magnet:?xt=urn:btih:1164c3cc2cddf7f230bb44e851dae884872d2830&dn=garuda-lxqt-kwin-linux-zen-210809.iso&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=http%3a%2f%2ffosstorrents.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&ws=https%3a%2f%2fmirrors.fossho.st%2fgaruda%2fiso%2fgaruda%2flxqt-kwin%2f210809%2fgaruda-lxqt-kwin-linux-zen-210809.iso&ws=https%3a%2f%2fmirrors.fosshost.org%2fgaruda%2fiso%2fgaruda%2flxqt-kwin%2f210809%2fgaruda-lxqt-kwin-linux-zen-210809.iso"
+SHA256SUM="928796c0067ffd47703b388e00a6c65fe05557af5947b3a15a0025c08b25f2d1"
