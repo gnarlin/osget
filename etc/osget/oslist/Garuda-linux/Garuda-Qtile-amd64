@@ -1,5 +1,0 @@
-# This is the configuration file for osget to download Garuda-Qtile-amd64
-
-# Urls for Garuda
-URL1="https://mirrors.fossho.st/garuda/iso/garuda/qtile/210816/garuda-qtile-linux-zen-210816.iso"
-SHA256SUM=""

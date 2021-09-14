@@ -55,9 +55,9 @@ list () {
 }
 
 checkfor_btclient () {
-        TRANSMISSION_CLI="$(whereis -b transmission-cli|awk -F" " '{print $2}')"
+        TRANSMISSION_CLI="$(whereis -b aria2c|awk -F" " '{print $2}')"
 	if [ "$TRANSMISSION_CLI" = "" ];then
-		echo "WARNING: Transmission-cli isn't installed. If you wish to download via bittorrent please install it."
+		echo "WARNING: aria2c isn't installed. If you wish to download via bittorrent please install it."
 	fi
 }
 
@@ -100,19 +100,19 @@ update_oslist () {
 
 download_iso () {
 	if ( [ "$USE_TORRENT" = "1" ] && [ "$MAGNET" != "" ] && [ "$DOWNLOAD_DIR" != "" ] );then
-		transmission-cli -w "$DOWNLOAD_DIR" "$MAGNET"
+		aria2c "$MAGNET" -d "$DOWNLOAD_DIR"
 	fi
 
 	if ( [ "$USE_TORRENT" = "1" ] && [ "$TORRENT" != "" ]&& [ "$DOWNLOAD_DIR" != "" ] );then
-		transmission-cli -w "$DOWNLOAD_DIR" "$TORRENT"
+		aria2c "$TORRENT" -d "$DOWNLOAD_DIR"
 	fi
 
 	if ( [ "$USE_TORRENT" = "1" ] && [ "$MAGNET" != "" ] );then
-		transmission-cli -w $(pwd) "$MAGNET"
+		aria2c -d $(pwd) "$MAGNET"
 	fi
 
 	if ( [ "$USE_TORRENT" = "1" ] && [ "$TORRENT" != "" ] );then
-		transmission-cli -w $(pwd) "$TORRENT"
+		aria2c -d $(pwd) "$TORRENT"
 	else
 		if [ "$DOWNLOAD_DIR" = "" ];then
 			wget -c "$URL"
