@@ -1,0 +1,5 @@
+# This is the configuration file for osget to download Garuda-BSPWM-amd64
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/bspwm/210809/garuda-bspwm-linux-zen-210809.iso"
+SHA256SUM="7fe4fd3ca673b82476ae17027e36f411703ae16699ca299f429a115bc0fdc63b"

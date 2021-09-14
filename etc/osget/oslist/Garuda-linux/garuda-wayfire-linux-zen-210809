@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download Garuda-Wayfire-amd64
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/wayfire/210809/garuda-wayfire-linux-zen-210809.iso"
+MAGNET="magnet:?xt=urn:btih:03bf8b154650feda81a8d8683efce2ea87d7bd3f&dn=garuda-wayfire-linux-zen-210809.iso&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=http%3a%2f%2ffosstorrents.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&ws=https%3a%2f%2fmirrors.fossho.st%2fgaruda%2fiso%2fgaruda%2fwayfire%2f210809%2fgaruda-wayfire-linux-zen-210809.iso&ws=https%3a%2f%2fmirrors.fosshost.org%2fgaruda%2fiso%2fgaruda%2fwayfire%2f210809%2fgaruda-wayfire-linux-zen-210809.iso"
+SHA256SUM="405b158ce6cafe30185da47716606de193e247d3b2bfe33b34f8710ca934b85c"

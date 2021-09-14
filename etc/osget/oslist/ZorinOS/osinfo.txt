@@ -1,0 +1,3 @@
+HOMEPAGE="https://zorin.com/"
+
+The alternative to Windows and macOS designed to make your computer faster, more powerful, secure, and privacy-respecting.

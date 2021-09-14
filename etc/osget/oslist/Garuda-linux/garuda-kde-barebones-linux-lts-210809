@@ -1,0 +1,5 @@
+# This is the configuration file for osget to download Garuda-Barebones-KDE-amd64
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/210809/garuda-kde-barebones-linux-lts-210809.iso"
+SHA256SUM="747d18e40b206b4738c9b4fb0fa454976d5973114bc36fde7135fc080674cba8"

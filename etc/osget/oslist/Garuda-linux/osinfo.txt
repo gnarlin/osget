@@ -1,0 +1,7 @@
+HOMEPAGE="https://garudalinux.org/"
+MIRRORLIST=""
+
+Garuda Linux is a rolling release distro based on Arch Linux, which ensures always getting the latest software updates.
+
+We only use one extra repo on top of Arch Linux repos, placing us very close to Arch Linux without having to install the system via command line.
+
