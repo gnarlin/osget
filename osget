@@ -65,7 +65,8 @@ get_information () {
 	local osname=$(find $CONFIGURATION_DIR/oslist/ -iname "$1")
 	
 	if [ ! -d "$osname" ];then
-		echo "No operating system with that name exists."
+		echo "No operating system in $CONFIGURATION_DIR/oslist/ found with that name."
+		echo "Run: osget --help or -h for help."
 		exit
 	fi
 
