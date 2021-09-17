@@ -1,0 +1,11 @@
+HOMEPAGE="https://mxlinux.org/"
+NEWS="https://mxlinux.org/mx-linux-blog/"
+PRODUCTS="https://mxlinux.org/products/"
+SUPPORT="https://mxlinux.org/support/"
+REPOS="https://mxlinux.org/community-repos/"
+ABOUT_US="https://mxlinux.org/about-us/"
+
+MX Linux is a cooperative venture between the antiX and MX Linux communities. 
+It is a family of operating systems that are designed to combine elegant and efficient desktops with high stability and solid performance.  
+MX’s graphical tools provide an easy way to do a wide variety of tasks, while the Live USB and snapshot tools inherited from antiX add 
+impressive portability and remastering capabilities. Extensive support is available through videos, documentation and a very friendly Forum.
