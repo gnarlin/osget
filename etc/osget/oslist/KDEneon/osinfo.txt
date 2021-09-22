@@ -1,0 +1,18 @@
+HOMEPAGE="https://neon.kde.org/"
+FAQ="https://neon.kde.org/faq"
+DEVELOPER_EDITION="https://neon.kde.org/develop"
+KDE_SLIMBOOK="https://kde.slimbook.es/"
+DOWNLOAD="https://neon.kde.org/download"
+
+KDE neon is a Linux distribution developed by KDE based on the most recent Ubuntu
+long-term support (LTS) release, bundled with a set of additional software repositories
+containing the latest 64-bit versions of the Plasma 5 desktop environment/framework,
+Qt 5 toolkit and other compatible KDE software. First announced in June 2016 by
+Kubuntu founder Jonathan Riddell following his departure from Canonical Ltd., it
+has been adopted by a steadily growing number of Linux users, regularly appearing
+in the Top 20 on DistroWatch.com's popularity tables. It is offered in stable and
+development variants; the User Edition is a stable release featuring the latest
+KDE packages that have passed quality assurance, while the Testing, Unstable, and
+Developer Edition branches use the latest beta and unstable nightly releases of
+KDE packages (the last of which bundled with KDE development libraries and head
+ers).
