@@ -1,0 +1,22 @@
+HOMEPAGE="https://www.haiku-os.org"
+ABOUT="https://www.haiku-os.org/about/"
+COMMUNITY="https://www.haiku-os.org/community/"
+DEVELOPMENT="https://www.haiku-os.org/development/"
+DOCUMENTS="https://www.haiku-os.org/documents/"
+INSTALLATION_GUIDE="https://www.haiku-os.org/get-haiku/installation-guide/"
+FAQ="https://www.haiku-os.org/about/faq/"
+USER_GUIDE="https://www.haiku-os.org/docs/userguide/en/contents.html"
+GUIDES="https://www.haiku-os.org/guides/"
+MAILING_LISTS="https://www.haiku-os.org/community/ml/"
+IRC_CHANNELS="https://www.haiku-os.org/community/irc/"
+FORUMS="https://discuss.haiku-os.org/"
+GETTING_INVOLVED="https://www.haiku-os.org/community/getting-involved/"
+DONATE="https://haiku-inc.org/donate"
+
+Haiku is a free and open-source operating system compatible with the now discontinued
+BeOS. Its development began in 2001, and the operating system became self-hosting
+in 2008. The first alpha release was made in September 2009, and the last was November
+2012; the first beta was released in September 2018, followed by beta 2 in June
+2020 and beta 3 in July 2021. Haiku is supported by Haiku, Inc., a non-profit organization
+based in Rochester, New York, United States, founded in 2003 by former project leader
+Michael Phipps.
