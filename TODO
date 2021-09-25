@@ -25,7 +25,7 @@ Buy and setup a domain for osget to host the official oslist on.
 
 UNKOWN:
 * Swap to using aria2c for torrenting. Transmission-cli seems to be on life support.
-* Create a .deb package and a .rpm package.
+* Create a .deb package and a .rpm package. DONE!
 * Validate URL only supports HTTP links for now. Needs to be fixed.
 * Finish adding every version, architecture and edition of the most major distros.
 * Add GPG verification/validation support.

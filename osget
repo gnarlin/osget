@@ -83,8 +83,17 @@ validate_url() {
 	[[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]
 }
 
-update_oslist () {
+checkif_root () {
+	if [ "$(id -u)" -eq 0 ];then
+		return 0
+	else
+		echo "You need root authority to update the oslist repository."
+		exit
+	fi
+}
 
+update_oslist () {
+checkif_root
 	for (( i=1 ; ; i++ )); do
 		n="OSLIST_REPOSITORY${i}"                # the name of var
 		[ "${!n+x}" ] || break          # see if it exists
@@ -92,7 +101,7 @@ update_oslist () {
 		echo "-------------------------------------------------"	
 		echo "Updating mirror $n to $CONFIGURATION_DIR/oslist/"	
 		echo "-------------------------------------------------"	
-		sudo wget -r -nH -q --show-progress --no-parent --retr-symlinks=no --directory-prefix=$CONFIGURATION_DIR/ $(eval echo \$OSLIST_REPOSITORY${i}/) 
+		wget -r -nH -q --show-progress --no-parent --retr-symlinks=no --directory-prefix=$CONFIGURATION_DIR/ $(eval echo \$OSLIST_REPOSITORY${i}/) 
 		echo "-------------------------------------------------"	
 		echo "DONE!"
 		echo "-------------------------------------------------"	
