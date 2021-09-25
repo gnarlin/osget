@@ -83,17 +83,9 @@ validate_url() {
 	[[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]
 }
 
-checkif_root () {
-	if [ "$(id -u)" -eq 0 ];then
-		return 0
-	else
-		echo "You need root authority to update the oslist repository."
-		exit
-	fi
-}
 
 update_oslist () {
-checkif_root
+if [ -w "$CONFIGURATION_DIR/oslist/" ];then
 	for (( i=1 ; ; i++ )); do
 		n="OSLIST_REPOSITORY${i}"                # the name of var
 		[ "${!n+x}" ] || break          # see if it exists
@@ -106,6 +98,10 @@ checkif_root
 		echo "DONE!"
 		echo "-------------------------------------------------"	
 	done
+else
+	echo "$USER does not have permission to write to the $CONFIGURATION_DIR/oslist/ filesystem location."
+	exit
+fi
 }
 
 download_iso () {
