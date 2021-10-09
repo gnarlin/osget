@@ -1,0 +1,16 @@
+HOMEPAGE="https://xubuntu.org/"
+DOWNLOAD="https://xubuntu.org/download/"
+ABOUT="https://xubuntu.org/tour/"
+HELP="https://xubuntu.org/help/"
+IRC="https://xubuntu.org/irc/"
+CONTACT="https://xubuntu.org/contact/"
+CONTRIBUTE="https://xubuntu.org/contribute/"
+BLOG="https://xubuntu.org/blog/"
+
+Xubuntu is a Canonical Ltd.–recognized, community-maintained derivative of the Ubuntu
+operating system. The name Xubuntu is a portmanteau of Xfce and Ubuntu, as it uses
+the Xfce desktop environment, instead of Ubuntu's GNOME desktop. Xubuntu seeks to
+provide "a light, stable and configurable desktop environment with conservative
+workflows" using Xfce components. Xubuntu is intended for both new and experienced
+Linux users. Rather than explicitly targeting low-powered machines, it attempts
+to provide "extra responsiveness and speed" on existing hardware.
