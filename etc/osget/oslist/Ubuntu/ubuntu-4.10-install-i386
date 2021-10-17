@@ -1,0 +1,5 @@
+# This is the configuration file for osget to download Ubuntu 4.10
+
+# Urls for ubuntu
+URL1="https://old-releases.ubuntu.com/releases/4.10/warty-release-install-i386.iso"
+SHA256SUM="c1fb21bab34025e9d34fd8cc3cea97492d0a3f0f59d4d50585ce1d9372452dce5049b1d3358237c1dffa346f0c9e24ad9faaa66657539af255403834c7da2222"

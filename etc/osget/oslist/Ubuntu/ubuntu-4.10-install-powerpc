@@ -1,0 +1,5 @@
+# This is the configuration file for osget to download Ubuntu 4.10
+
+# Urls for ubuntu
+URL1="https://old-releases.ubuntu.com/releases/4.10/warty-release-install-powerpc.iso"
+SHA256SUM="4f3a0164c87282cb6ad6d9f4a2cff610c236b7decb735b9a3548cc4e007fc9d978284c9aa3e12b5af65c320640732963d80caefc7ccd751975890cb7762fd02e"
