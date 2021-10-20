@@ -1,0 +1,4 @@
+URL1="https://cdimage.ubuntu.com/ubuntu-budgie/releases/21.10/release/ubuntu-budgie-21.10-desktop-amd64.iso"
+MAGNET="magnet:?xt=urn:btih:08e890ac1e2a233f210b51138166ec7471cc5589"
+TORRENT="http://cdimage.ubuntu.com/ubuntu-budgie/releases/impish/release/ubuntu-budgie-21.10-desktop-amd64.iso.torrent"
+SHA256SUM="080bb15f3192463c8fc197ed2dfcbf7a26f0168fc38ee4aca54ed4ba15245233"

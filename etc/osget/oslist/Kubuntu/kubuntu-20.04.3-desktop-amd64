@@ -1,3 +1,4 @@
 URL1="https://cdimage.ubuntu.com/kubuntu/releases/20.04.3/release/kubuntu-20.04.3-desktop-amd64.iso"
 TORRENT="https://cdimage.ubuntu.com/kubuntu/releases/20.04.3/release/kubuntu-20.04.3-desktop-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:7f0e917ff8dc6a11dace0043415d2d990fd4f103"
 SHA256SUM="11bca68f3366b11c7887666124e0155c6e2fbe1350ab14f25cd15299ac8f68b5"

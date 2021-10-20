@@ -1,0 +1,14 @@
+HOMEPAGE="https://ubuntu-mate.org/"
+ABOUT="https://ubuntu-mate.org/about/"
+FEATURES="https://ubuntu-mate.org/features/"
+BLOG="https://ubuntu-mate.org/blog/"
+DOWNLOAD="https://ubuntu-mate.org/download/"
+SUPPORT="https://ubuntu-mate.org/support/"
+GET-INVOLVED="https://ubuntu-mate.org/get-involved/"
+SHOP="https://ubuntu-mate.org/shop/"
+FUNDING="https://ubuntu-mate.org/funding/"
+
+Ubuntu MATE is a stable, easy-to-use operating system with a configurable desktop environment. 
+It is ideal for those who want the most out of their computers and prefer a traditional desktop metaphor. 
+With modest hardware requirements it is suitable for modern workstations, single board computers and 
+older hardware alike. Ubuntu MATE makes modern computers fast and old computers usable.

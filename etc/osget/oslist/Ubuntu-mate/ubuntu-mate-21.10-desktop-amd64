@@ -1,0 +1,4 @@
+URL1="https://cdimage.ubuntu.com/ubuntu-mate/releases/21.10/release/ubuntu-mate-21.10-desktop-amd64.iso"
+MAGNET="magnet:?xt=urn:btih:1e94efefdeee7c3785ba91f48c991a61e66d58b1&dn=ubuntu-mate-21.10-desktop-amd64.iso&tr=https%3A%2F%2Ftorrent.ubuntu.com%2Fannounce"
+TORRENT="https://cdimage.ubuntu.com/ubuntu-mate/releases/21.10/release/ubuntu-mate-21.10-desktop-amd64.iso.torrent"
+SHA256SUM="https://cdimage.ubuntu.com/ubuntu-mate/releases/21.10/release/ubuntu-mate-21.10-desktop-amd64.iso.torrent"

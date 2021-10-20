@@ -1,0 +1,4 @@
+URL1="https://releases.ubuntu.com/21.10/ubuntu-21.10-live-server-amd64.iso"
+TORRENT="https://releases.ubuntu.com/21.10/ubuntu-21.10-live-server-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:c9abe33e3679593cd89927910d528252cdc44e6e"
+SHA256SUM="e84f546dfc6743f24e8b1e15db9cc2d2c698ec57d9adfb852971772d1ce692d4"

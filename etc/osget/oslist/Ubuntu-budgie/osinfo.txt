@@ -1,0 +1,15 @@
+HOMEPAGE="https://ubuntubudgie.org/"
+ABOUT-US="https://ubuntubudgie.org/about-us/"
+DOWNLOADS="https://ubuntubudgie.org/downloads/"
+DONATE="https://ubuntubudgie.org/donate/"
+BLOG="https://ubuntubudgie.org/blog/"
+TEAM="https://ubuntubudgie.org/team/"
+OPPORTUNITIES="https://discourse.ubuntubudgie.org/c/Get-Involved"
+GALLERY="https://ubuntubudgie.org/gallery/"
+CONTACT="https://ubuntubudgie.org/contact/"
+SUPPORT="https://discourse.ubuntubudgie.org/"
+
+Ubuntu Budgie is a community developed distribution, 
+integrating the Budgie Desktop Environment with Ubuntu at its core. 
+Whether you are using it on an old computer, or a powerful workstation, 
+Ubuntu Budgie is adaptable to any device, keeping them fast and usable.

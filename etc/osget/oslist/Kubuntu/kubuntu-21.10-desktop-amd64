@@ -1,0 +1,4 @@
+URL1="https://cdimage.ubuntu.com/kubuntu/releases/21.10/release/kubuntu-21.10-desktop-amd64.iso"
+TORRENT="https://cdimage.ubuntu.com/kubuntu/releases/21.10/release/kubuntu-21.10-desktop-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:005c8ace4452b01ca49d56b3bfc4a7bacccfaa1b"
+SHA256SUM="4a56cfc43e0f4ead6b7e66b3da67ab22d96c46dc090190a06d2848b6e03fe02a"
