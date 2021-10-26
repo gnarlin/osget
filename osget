@@ -64,6 +64,12 @@ checkfor_btclient () {
 get_information () {
 	local osname=$(find $CONFIGURATION_DIR/oslist/ -iname "$1")
 	
+	if [ -f "$osname" ];then
+		local path=$(dirname $osname)
+		cat $path/osinfo.txt
+		exit
+	fi
+
 	if [ ! -d "$osname" ];then
 		echo "No operating system in $CONFIGURATION_DIR/oslist/ found with that name."
 		echo "Run: osget --help or -h for help."
@@ -77,7 +83,8 @@ get_information () {
 		cat $osname/osinfo.txt
 		exit
 	fi
-}
+
+	}
 
 validate_url() {
 	[[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]
