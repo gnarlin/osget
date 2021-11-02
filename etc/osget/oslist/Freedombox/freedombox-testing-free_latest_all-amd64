@@ -1,3 +1,2 @@
-# This is the configuration for for Osget to download freedombox-testing-free_latest_all-amd64
 URL1="https://ftp.freedombox.org/pub/freedombox/hardware/amd64/testing/freedombox-testing-free_latest_all-amd64.img.xz"
-SHA512SUM="18d50dccd08055241871b7d28a593afa598249e021048435c1938cf1db52022382ce9a5e23f31c678b723b06409803b21d809a14e6b2639bf3bade4a81baca7e"
+SHA512SUM="0876a33a1c3a1571a038c84138c7f6f6be69a8531710db0eeb03454e58dad6a6a9dfe783af4acdccd488ae4f79eac31aa3eddde9d5f02b3ccd9198dd2c6afcbe"

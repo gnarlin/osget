@@ -1,6 +1,4 @@
 HOMEPAGE="https://www.freedombox.org"
-MIRRORLIST="https://launchpad.net/ubuntu/+cdmirrors"
-TORRENTLIST="https://torrent.ubuntu.com/tracker_index"
 DONATE="https://freedomboxfoundation.org/donate/"
 FORUM="https://discuss.freedombox.org/"
 MAILING-LIST="https://alioth-lists.debian.net/cgi-bin/mailman/listinfo/freedombox-discuss"

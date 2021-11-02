@@ -1,3 +1,0 @@
-# This is the configuration for for Osget to download freedombox-stable-free_buster_all-amd64
-URL1="https://ftp.freedombox.org/pub/freedombox/hardware/amd64/stable/freedombox-stable-free_buster_all-amd64.img.xz"
-SHA512SUM="45cd82a2593532a91b4c4a1b1e42ca9ddcf3e31890af462bb489863631624722531008cd1c716de2ede364533108827ab45d5f8206b953090a04ccf225d68d3c"
