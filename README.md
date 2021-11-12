@@ -7,8 +7,10 @@ cd osget <br>
 sudo ./install.sh --install <br>
 <br>
 You can also use the debian package on Debian based distributions: <br>
-sudo apt install ./osget_1.3_all.deb <br>
+sudo apt install ./osget_1.4_all.deb <br>
 <br>
 If you want to use the tradition method: <br>
-sudo dpkg -i osget_1.3_all.deb <br>
+sudo dpkg -i osget_1.4_all.deb <br>
 <br>
+sudo ./install-sh --uninstall <br>
+This uninstalls osget, all configuration files and the oslist repository. <br>

@@ -11,7 +11,7 @@ else
 	readonly CONFIGURATION_DIR="$OSDEV_CONFIGURATION_DIR"
 fi
 
-VERSION="1.3"
+VERSION="1.4"
 
 # shellcheck source=/etc/osget/osget.conf
 source $CONFIGURATION_DIR/osget.conf
@@ -46,7 +46,19 @@ list_osnames () {
 }
 
 search () {
-        find "$CONFIGURATION_DIR"/oslist/* -type f -print|awk  -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt"|grep -i "$1"
+	if [ ! -d "$CONFIGURATION_DIR/oslist" ];then
+		echo "$CONFIGURATION_DIR/oslist directory doesn't exist."
+		exit
+	fi
+
+	ls $CONFIGURATION_DIR/oslist/* > /dev/null 2>&1
+	if [ "$?" != "0" ];then
+		echo "$CONFIGURATION_DIR/oslist/ is empty."
+		exit
+	fi
+
+	
+	find "$CONFIGURATION_DIR"/oslist/* -type f -print|awk  -F$CONFIGURATION_DIR '{print $2}'|cut -f 4 -d/|grep -v "txt"|grep -i "$1"
 	ls -1 "$CONFIGURATION_DIR"/oslist/ |grep -i "$1"
 }
 
@@ -92,12 +104,18 @@ validate_url() {
 
 
 update_oslist () {
+if [ ! -e "$CONFIGURATION_DIR/oslist" ];then
+	mkdir -p "$CONFIGURATION_DIR/oslist"
+fi
+
 if [ -w "$CONFIGURATION_DIR/oslist/" ];then
+	echo "Removing all files from oslist repository..."
+	rm -rf $CONFIGURATION_DIR/oslist/*
+
 	for (( i=1 ; ; i++ )); do
 		n="OSLIST_REPOSITORY${i}"                # the name of var
 		[ "${!n+x}" ] || break          # see if it exists
-		
-		echo "-------------------------------------------------"	
+		echo "-------------------------------------------------"
 		echo "Updating mirror $n to $CONFIGURATION_DIR/oslist/"	
 		echo "-------------------------------------------------"	
 		wget -r -nH -q --show-progress --no-parent --retr-symlinks=no --directory-prefix=$CONFIGURATION_DIR/ $(eval echo \$OSLIST_REPOSITORY${i}/) 

@@ -58,3 +58,6 @@ Osget 1.3
 	* Use env(1) to find path to bash.	
 12.09.2021	Freyr Ólafsson	gnarlin@fripost.org
 	* Updated oslist with more OS images and updated man page.
+Osget 1.4
+12.11.2021	Freyr Ólafsson	gnarlin@fripost.org
+	* Updated --search and --update to be more robust and fault tolerant.
