@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download Debian
+
+# Urls for debian via http
+URL1="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.2.0-amd64-netinst.iso"
+SHA512SUM="c685b85cf9f248633ba3cd2b9f9e781fa03225587e0c332aef2063f6877a1f0622f56d44cf0690087b0ca36883147ecb5593e3da6f965968402cdbdf12f6dd74"
+TORRENT="https://cdimage.debian.org/debian-cd/11.2.0/amd64/bt-cd/debian-11.2.0-amd64-netinst.iso.torrent"
