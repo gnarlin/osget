@@ -32,3 +32,5 @@ UNKOWN:
   In fact I'd like to expand on this and make multiple torrent clients compatible with
   osget. Transmission-cli will probably remain the default but add a config variable
   for different torrent clients.
+* Rewrite the install.sh script. It's old and crusty and doesn't enable people to install
+  without root permissions.
