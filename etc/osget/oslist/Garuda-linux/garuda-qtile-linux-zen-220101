@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download qtile
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/qtile/220101/garuda-qtile-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/qtile/220101/garuda-qtile-linux-zen-220101.iso.torrent"
+SHA256SUM="2c62065497323598dbb71c5ad94fd8af976776c83948bc19e857a4787d0696cf"

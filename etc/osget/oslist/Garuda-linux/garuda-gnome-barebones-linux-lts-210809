@@ -1,5 +1,0 @@
-# This is the configuration file for osget to download Garuda-Barebones-amd64
-
-# Urls for Garuda
-URL1="https://mirrors.fossho.st/garuda/iso/garuda/gnome-barebones/210809/garuda-gnome-barebones-linux-lts-210809.iso"
-SHA256SUM="f23c6b069df72c4e969d59d21f9271f8c5e3d5d02e79b78cf57248e3472f8934"

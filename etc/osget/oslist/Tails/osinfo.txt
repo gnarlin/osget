@@ -1,0 +1,3 @@
+HOMEPAGE="https://tails.boum.org"
+
+Tails is a portable operating system that protects against surveillance and censorship.

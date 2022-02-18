@@ -1,6 +1,0 @@
-# This is the configuration file for osget to download Garuda-KDE-Dr460nized-Gaming-Edition-amd64
-
-# Urls for Garuda
-URL1="https://mirrors.fossho.st/garuda/iso/garuda/dr460nized-gaming/210809/garuda-dr460nized-gaming-linux-zen-210809.iso"
-MAGNET="magnet:?xt=urn:btih:14272986fc76e5fe13fefbb0c1174f95a146c241&dn=garuda-dr460nized-gaming-linux-zen-210809.iso&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=http%3a%2f%2ffosstorrents.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&ws=https%3a%2f%2fmirrors.fossho.st%2fgaruda%2fiso%2fgaruda%2fdr460nized-gaming%2f210809%2fgaruda-dr460nized-gaming-linux-zen-210809.iso&ws=https%3a%2f%2fmirrors.fosshost.org%2fgaruda%2fiso%2fgaruda%2fdr460nized-gaming%2f210809%2fgaruda-dr460nized-gaming-linux-zen-210809.iso"
-SHA256SUM="23cc1f6b8616735760cf919642025efde46cb75055522459a6feac0d1d686817"

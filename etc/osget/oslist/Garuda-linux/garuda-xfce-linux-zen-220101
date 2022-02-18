@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download xfce
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/xfce/220101/garuda-xfce-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/xfce/220101/garuda-xfce-linux-zen-220101.iso.torrent"
+SHA256SUM="e1ea077b3bbd87d224b183c0950ca07a0cccaf78416758b32159797745d231fc"

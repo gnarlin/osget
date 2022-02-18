@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download dr4g0nized gaming
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/dr460nized-gaming/220101/garuda-dr460nized-gaming-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/dr460nized-gaming/220101/garuda-dr460nized-gaming-linux-zen-220101.iso.torrent"
+SHA256SUM="67f376fd3cc38a60114467310965aa39b289257bc2479785fad861c2c5d52b95"

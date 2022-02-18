@@ -1,0 +1,4 @@
+URL1="http://dl.amnesia.boum.org/tails/stable/tails-amd64-4.26/tails-amd64-4.26.img"
+URL2="https://mirror.jason-m.net/tails/stable/tails-amd64-4.26/tails-amd64-4.26.img"
+TORRENT="https://tails.boum.org/torrents/files/tails-amd64-4.26.img.torrent"
+SHA256SUM="a7532705ef863f65312527bb3afef6b7b9283af04a44e891b4b65742600714ea"

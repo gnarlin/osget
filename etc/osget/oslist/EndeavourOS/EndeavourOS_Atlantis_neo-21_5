@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download EndeavourOS
+
+# Urls for EndeavourOS via http
+URL1="https://github.com/endeavouros-team/ISO/releases/download/1-EndeavourOS-ISO-releases-archive/EndeavourOS_Atlantis_neo-21_5.iso"
+TORRENT="https://github.com/endeavouros-team/ISO/releases/download/1-EndeavourOS-ISO-releases-archive/EndeavourOS_Atlantis_neo-21_5.iso.torrent"
+SHA512SUM="fcaf4fa68bcd12bcdcf15e5022ca6b96d0356ad9047c10fa88f821cc151f44ec30fa5b8043d6c796228331ffd93f7aef819276b9f11f609d3fa13ecc66eacb1c"
