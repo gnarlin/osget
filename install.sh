@@ -1,7 +1,7 @@
 #! /bin/bash
 #
 # file: installer.sh
-# This is osget version 1.4
+# This is osget version 1.5
 # written by Freyr Gunnar Ólafsson
 # This program is licenced under the GPL version 3 or higher (if available)
 

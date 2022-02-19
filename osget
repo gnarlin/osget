@@ -11,7 +11,7 @@ else
 	readonly CONFIGURATION_DIR="$OSDEV_CONFIGURATION_DIR"
 fi
 
-VERSION="1.4"
+VERSION="1.5"
 
 # shellcheck source=/etc/osget/osget.conf
 source $CONFIGURATION_DIR/osget.conf
