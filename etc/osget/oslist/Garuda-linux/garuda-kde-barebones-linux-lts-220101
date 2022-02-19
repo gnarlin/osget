@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download KDE
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/220101/garuda-kde-barebones-linux-lts-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/220101/garuda-kde-barebones-linux-lts-220101.iso.torrent"
+SHA256SUM="79fbe55be1385d61d3ecd992aecb1b53b41a4bc4ffd61425675e7089e5cbc2e8"

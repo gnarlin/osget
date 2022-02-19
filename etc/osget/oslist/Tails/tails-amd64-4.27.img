@@ -1,0 +1,4 @@
+URL1="https://tails.mirror.iphh.net/tails/stable/tails-amd64-4.27/tails-amd64-4.27.img"
+URL2="https://mirror.jason-m.net/tails/stable/tails-amd64-4.27/tails-amd64-4.27.img"
+TORRENT="https://tails.boum.org/torrents/files/tails-amd64-4.27.img.torrent"
+SHA256SUM="a4caa33ee96bb3294467f5216cab61cfbafc7bd2c6794f0d97b447d942f1f3cd"

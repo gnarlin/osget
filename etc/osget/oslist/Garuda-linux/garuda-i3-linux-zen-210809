@@ -1,5 +1,0 @@
-# This is the configuration file for osget to download Garuda-i3WM-amd64
-
-# Urls for Garuda
-URL1="https://mirrors.fossho.st/garuda/iso/garuda/i3/210809/garuda-i3-linux-zen-210809.iso"
-SHA256SUM="b372d8d79a01ec6bb52ef782ccb3c85f7ee9f747c5e35f4eab62569f063402e3"

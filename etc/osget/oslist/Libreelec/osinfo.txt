@@ -1,0 +1,4 @@
+HOMEPAGE="https://libreelec.tv"
+MIRRORLIST="https://libreelec.tv/downloads"
+
+LibreELEC is a lightweight ‘Just enough OS’ Linux distribution purpose-built for Kodi on current and popular mediacentre hardware.

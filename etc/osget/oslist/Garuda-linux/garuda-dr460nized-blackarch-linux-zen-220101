@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download dr460nized blackarch 
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/dr460nized-blackarch/220101/garuda-dr460nized-blackarch-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/dr460nized-blackarch/220101/garuda-dr460nized-blackarch-linux-zen-220101.iso.torrent"
+SHA256SUM="bbce6f5c7d5cec1720e85ca4628396d5741aca322d5587ac419d98ce8474ccce"

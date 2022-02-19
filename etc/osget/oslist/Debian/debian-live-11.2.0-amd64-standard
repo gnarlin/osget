@@ -1,0 +1,5 @@
+# This is the configuration file for osget to download Debian
+
+# Urls for debian via http
+URL1="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-11.2.0-amd64-standard.iso"
+SHA512SUM="cc5d1d842242a67086a4c7136e01e8489a3e643348d2f3ed550682f84f4e86587427d762cde93c7a7faf9c172762fcc7fff62ae76fddb8c5f28de4ca2c1ee457"

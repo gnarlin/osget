@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download LXQT
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/220101/garuda-lxqt-kwin-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/220101/garuda-lxqt-kwin-linux-zen-220101.iso.torrent"
+SHA256SUM="e22d4a52a8ba508cef15718bf76e1c13fab0002ded73aef9428cfc1ea02e424c"

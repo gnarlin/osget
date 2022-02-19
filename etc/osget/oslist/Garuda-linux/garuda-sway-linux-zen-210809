@@ -1,5 +1,0 @@
-# This is the configuration file for osget to download Garuda-Sway-amd64
-
-# Urls for Garuda
-URL1="https://mirrors.fossho.st/garuda/iso/garuda/sway/210809/garuda-sway-linux-zen-210809.iso"
-SHA256SUM="0f3a0e2db411fed4d8fab2576f5f6c8ad4b14dd3e8d09f78370bae19d359abf8"

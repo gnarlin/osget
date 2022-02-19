@@ -1,0 +1,6 @@
+HOMEPAGE="https://sourceforge.net/projects/snallinux"
+DOWNLOAD="https://sourceforge.net/projects/snallinux/files"
+DOCUMENTATION="https://sourceforge.net/p/snallinux/wiki/Home"
+
+
+Snal is based on Arch linux <https://www.archlinux.org>, the i3 window manager <https://i3wm.org>, and Firefox web browser <https://www.mozilla.org>. It is intended to be used as a live USB image to troubleshoot hard disk, system, and network problems.

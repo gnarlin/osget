@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download wayfire
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/wayfire/220101/garuda-wayfire-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/wayfire/220101/garuda-wayfire-linux-zen-220101.iso.torrent"
+SHA256SUM="d47a62a24c955c33ff624419942fb8c498c4db58e12be1244b913c3e36bff963"

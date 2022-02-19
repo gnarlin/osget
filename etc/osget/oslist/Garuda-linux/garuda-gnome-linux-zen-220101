@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download Gnome
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/gnome/220101/garuda-gnome-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/gnome/220101/garuda-gnome-linux-zen-220101.iso"
+SHA256SUM="cc0eea6b9d53f5c737efa98a408b7edaca83c94dca70b83b8949fd067d983ac0"

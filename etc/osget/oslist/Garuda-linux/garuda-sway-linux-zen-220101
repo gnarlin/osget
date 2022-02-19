@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download sway
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/sway/220101/garuda-sway-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/sway/220101/garuda-sway-linux-zen-220101.iso.torrent"
+SHA256SUM="946d21903a3f52e3e039c603b49bd9aa637b7e99523834b1489791303040bbb3"

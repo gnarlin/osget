@@ -1,4 +1,5 @@
 HOMEPAGE="https://mxlinux.org/"
+MIRRORS="https://mxlinux.org/wiki/system/iso-download-mirrors/"
 NEWS="https://mxlinux.org/mx-linux-blog/"
 PRODUCTS="https://mxlinux.org/products/"
 SUPPORT="https://mxlinux.org/support/"

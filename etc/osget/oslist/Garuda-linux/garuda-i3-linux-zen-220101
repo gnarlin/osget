@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download i3
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/i3/220101/garuda-i3-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/i3/220101/garuda-i3-linux-zen-220101.iso.torrent"
+SHA256SUM="4d153f898e2c43a6a2e06b41cd1611000c15e1db95b99719222415f9ca33bdd3"

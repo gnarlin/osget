@@ -1,0 +1,6 @@
+# This is the configuration file for osget to download bspwm
+
+# Urls for Garuda
+URL1="https://mirrors.fossho.st/garuda/iso/garuda/bspwm/220101/garuda-bspwm-linux-zen-220101.iso"
+TORRENT="https://mirrors.fossho.st/garuda/iso/garuda/bspwm/220101/garuda-bspwm-linux-zen-220101.iso.torrent"
+SHA256SUM="2ddce3f125153b9bffe5241b8528b80a9e1710795bcf5fee7613aef8dedabe68"
