@@ -1,0 +1,7 @@
+# This is the configuration file for osget to download Ubuntu 20.04.4.0
+
+# Urls for ubuntu
+URL1="https://releases.ubuntu.com/20.04.4/ubuntu-20.04.4-desktop-amd64.iso"
+URL2="https://ubuntu.hysing.is/ubuntu-releases/20.04.4/ubuntu-20.04.4-desktop-amd64.iso"
+TORRENT="https://releases.ubuntu.com/20.04.4/ubuntu-20.04.4-desktop-amd64.iso.torrent"
+SHA256SUM="f92f7dca5bb6690e1af0052687ead49376281c7b64fbe4179cc44025965b7d1c"
