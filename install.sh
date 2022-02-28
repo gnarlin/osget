@@ -31,7 +31,7 @@ checkif_root ()
 
 #This is where osget will be installed.
 TARGET="/usr/bin"
-VERSION="1.3"
+VERSION="1.5"
 ID=""
 
 #check if the files exist
