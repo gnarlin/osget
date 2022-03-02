@@ -2,4 +2,6 @@
 
 # Urls for Slackware via http
 URL1="https://mirrors.slackware.com/slackware/slackware-iso/slackware64-15.0-iso/slackware64-15.0-install-dvd.iso" 
+MAGNET="magnet:?xt=urn:btih:ccf87debed487d8623404e93b22d2f3ff86a67b6&dn=slackware64-15.0-iso"
+TORRENT="https://seedbox.slackware.uk/torrents/slackware64-15.0-install-dvd.torrent"
 SHA512SUM="33bbd07ef9cb66a3f10bacd6dedb8fbc1865f4ca543e028e3bbe010ea6a0613d2f6b1bf6c77d5067ccd74fa3550652ee774639cea7764db37985d6f315dedca5"

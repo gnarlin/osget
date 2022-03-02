@@ -1,0 +1,7 @@
+# This is the configuration file for osget to download Slackware
+
+# Urls for Slackware via http
+URL1="https://mirrors.slackware.com/slackware/slackware-iso/slackware-15.0-iso/slackware-15.0-install-dvd.iso" 
+MAGNET="magnet:?xt=urn:btih:34af1437d6381e53e6099fb70b732861395b6a1a&dn=slackware-15.0-iso"
+TORRENT="https://seedbox.slackware.uk/torrents/slackware-15.0-install-dvd.torrent"
+SHA512SUM="dc9b673e785021d946938920181f7f7f7b71dea5baef7ced1dc706951f3a4074d213c6fdca46e6e4ea82d58225e9314a08ea0b29f9fcd683bced22b24ee7a276"
