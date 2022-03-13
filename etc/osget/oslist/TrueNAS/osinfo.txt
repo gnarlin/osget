@@ -1,0 +1,13 @@
+HOMEPAGE="https://www.truenas.com/"
+
+TrueNAS is the branding for a range of free and open-source network-attached storage
+(NAS) operating systems produced by iXsystems, and based on FreeBSD and Linux, using
+the OpenZFS file system. It is licensed under the terms of the BSD License and runs
+on commodity x86-64 hardware. The TrueNAS range includes free public versions (TrueNAS
+CORE, previously known as FreeNAS), commercial versions (TrueNAS Enterprise), Linux
+versions (TrueNAS SCALE, under development as of January 2021), and hardware from
+small home systems to 10 petabyte arrays, based on these. TrueNAS supports Windows,
+macOS and Unix clients and various virtualization hosts such as XenServer and VMware
+using the SMB, AFP, NFS, iSCSI, SSH, rsync and FTP/TFTP protocols. Advanced TrueNAS
+features include full-disk encryption and a plug-in architecture for third-party
+software.
