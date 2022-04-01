@@ -1,0 +1,3 @@
+HOMEPAGE="https://www.finnix.org"
+
+Finnix is the original utility live Linux distribution. Write it to a USB flash drive or burn it to a CD, boot it, and you're seconds from a root prompt with hundreds of utilities available for recovery, maintenance, testing and more.
