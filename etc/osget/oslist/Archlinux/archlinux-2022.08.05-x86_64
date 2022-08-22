@@ -1,0 +1,6 @@
+URL1="https://mirror.rackspace.com/archlinux/iso/2022.08.05/archlinux-2022.08.05-x86_64.iso"
+URL2="http://mirrors.dotsrc.org/archlinux/iso/2022.08.05/archlinux-2022.08.05-x86_64.iso"
+URL3="http://dfw.mirror.rackspace.com/archlinux/iso/2022.08.05/archlinux-2022.08.05-x86_64.iso"
+MAGNET="magnet:?xt=urn:btih:2269f426d759e43aaff51c0256f85256aed89910&dn=archlinux-2022.08.05-x86_64.iso"
+TORRENT="https://archlinux.org/releng/releases/2022.08.05/torrent/"
+SHA256SUM="187cf50f8f0619426e98835fdeaa4f3b3dd6a3471b2efc496f50d25ffe0e19db"

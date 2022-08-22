@@ -1,6 +1,0 @@
-URL1="https://mirror.rackspace.com/archlinux/iso/2021.11.01/archlinux-2021.11.01-x86_64.iso"
-URL2="http://ftp.agdsn.de/pub/mirrors/archlinux/iso/2021.11.01/archlinux-2021.11.01-x86_64.iso"
-URL3="http://mirror.cj2.nl/archlinux/iso/2021.11.01/archlinux-2021.11.01-x86_64.iso"
-MAGNET="magnet:?xt=urn:btih:49bd6ee35e815507c0404b49a2de1242378cb0c6&dn=archlinux-2021.11.01-x86_64.iso"
-TORRENT="https://archlinux.org/releng/releases/2021.11.01/torrent/"
-SHA1SUM="d81bff7f9b05653b048529d741edcce99bc97819"
