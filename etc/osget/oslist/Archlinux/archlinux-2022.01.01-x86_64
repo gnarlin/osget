@@ -1,6 +1,0 @@
-URL1="https://mirror.rackspace.com/archlinux/iso/2022.01.01/archlinux-2022.01.01-x86_64.iso"
-URL2="http://mirrors.dotsrc.org/archlinux/iso/2022.01.01/archlinux-2022.01.01-x86_64.iso"
-URL3="http://dfw.mirror.rackspace.com/archlinux/iso/2022.01.01/archlinux-2022.01.01-x86_64.iso"
-MAGNET="magnet:?xt=urn:btih:e368633c136582fc3eab4a77b1c75c36151a8eef&dn=archlinux-2022.01.01-x86_64.iso"
-TORRENT="https://archlinux.org/releng/releases/2022.01.01/torrent/"
-SHA1SUM="efc9c33087e756ba1c7f326e67bfaa685eb51be3"
