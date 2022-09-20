@@ -1,5 +1,5 @@
 HOMEPAGE="https://www.slax.org"
 
-Slax is a modern, portable, small and fast Linux operating system with modular approach and outstanding design. It runs directly from your USB flash drive without installing, so you can carry it everywhere you go in your pocket. Despite its small size, Slax provides nice graphical user interface and wise selection of pre-installed programs, such as a Web browser, Terminal, and more.
+Slax is a modern, portable, small and fast Linux operating system with modular approach and outstanding design. It runs directly from your USB flash drive without installing, so you can carry it everywhere you go in your pocket. Despite its small size, Slax provides nice graphical user interface and wise selection of pre-installed programs, such as a File manager, Text editor, Terminal, and more.
 
-Slax is now based on Debian, which gives you the ability to benefit from its entire ecosystem. Tens of thousands of prebuilt packages with applications, all within reach thanks to apt command.
+Slax is based on Slackware or Debian, which gives you the ability to benefit from the entire ecosystem of each. Tens of thousands of prebuilt packages with applications, all within reach thanks to slackpkg (Slackware) or apt (Debian) command. 
