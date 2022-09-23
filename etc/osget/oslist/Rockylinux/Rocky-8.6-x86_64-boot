@@ -1,0 +1,3 @@
+# Download file for Rocky Linux
+URL1="https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.6-x86_64-boot.iso"
+SHA256SUM="fe77cc293a2f2fe6ddbf5d4bc2b5c820024869bc7ea274c9e55416d215db0cc5"
