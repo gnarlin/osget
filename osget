@@ -179,7 +179,8 @@ verify_file () {
 			echo "Checksum of downloaded file matches."
 		elif [ "$SHA1SUM" = "$(sha1sum $file|awk '{print $1}')" ];then
 			echo "Checksum of downloaded file matches."
-
+		elif [ "$MD5SUM" = "$(md5sum $file|awk '{print $1}')" ];then
+			echo "Checksum of downloaded file matches."
 		else
 			echo "WARNING: This file could be a fake!" 
 			echo "Checksum of downloaded file does NOT match the checksum on record!"
@@ -191,7 +192,8 @@ verify_file () {
 			echo "Checksum of downloaded file matches."
 		elif [ "$SHA1SUM" = "$(sha1sum $DOWNLOAD_DIR/$file|awk '{print $1}')" ];then
 			echo "Checksum of downloaded file matches."
-
+		elif [ "$MD5SUM" = "$(md5sum $DOWNLOAD_DIR/$file|awk '{print $1}')" ];then
+			echo "Checksum of downloaded file matches."
 		else
 			echo "WARNING: This file could be a fake!" 
 			echo "Checksum of downloaded file does NOT match the checksum on record!"
