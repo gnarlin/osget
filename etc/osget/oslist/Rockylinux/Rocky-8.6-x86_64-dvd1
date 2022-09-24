@@ -1,0 +1,4 @@
+# Download file for Rocky Linux
+URL1="https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.6-x86_64-dvd1.iso"
+TORRENT="https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.6-x86_64-dvd1.torrent"
+SHA256SUM="1d48e0af63d07ff4e582a1819348e714c694e7fd33207f48879c2bc806960786"

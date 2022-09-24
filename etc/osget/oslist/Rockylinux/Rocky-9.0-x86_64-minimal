@@ -1,0 +1,3 @@
+# Download file for Rocky Linux
+URL1="https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.0-20220805.0-x86_64-minimal.iso"
+SHA256SUM="b16bc85f4fd14facf3174cd0cf8434ee048d81e5470292f3e1cfff47af2463b7"
