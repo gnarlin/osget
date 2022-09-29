@@ -1,0 +1,3 @@
+# Download file for Rocky Linux
+URL1="https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.0-x86_64-boot.iso"
+SHA256SUM="fc6b306b9fc8d327d7545373ce88c48bd1f7e84d29548814a91e84676b7d26e4"
