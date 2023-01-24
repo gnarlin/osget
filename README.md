@@ -16,5 +16,5 @@ sudo dpkg -i osget_1.5_all.deb
 ```
 This uninstalls osget, all configuration files and the oslist repository:
 ```shell
-sudo ./install-sh --uninstall
+sudo ./install.sh --uninstall
 ```
