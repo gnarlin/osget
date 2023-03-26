@@ -64,3 +64,9 @@ Osget 1.4
 Osget 1.5
 19.02.2022	Freyr Ólafsson gnarlin@fripost.org
 	* Updated oslist with a large contribution from Jeremy Wakeman. Thank you.
+Osget 1.6
+26.03.2023	Freyr Ólafsson	gnarlin@fripost.org
+	* Fixed a super annoying bug where if you tried to download but the oslist entry
+	had a dead link osget would get confused and freeze with an empty http entry.
+	* Added --check which goes through every URL in every oslist file and checks to see
+	if the links are dead or still up. It even has colour codes for OK or Down.

@@ -8,11 +8,11 @@ sudo ./install.sh --install
 ```
 You can also use the debian package on Debian based distributions:
 ```shell
-sudo apt install ./osget_1.5_all.deb
+sudo apt install ./osget_1.6_all.deb
 ```
 If you want to use the tradition method:
 ```shell
-sudo dpkg -i osget_1.5_all.deb
+sudo dpkg -i osget_1.6_all.deb
 ```
 This uninstalls osget, all configuration files and the oslist repository:
 ```shell

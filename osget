@@ -11,7 +11,7 @@ else
 	readonly CONFIGURATION_DIR="$OSDEV_CONFIGURATION_DIR"
 fi
 
-VERSION="1.5"
+VERSION="1.6"
 
 # shellcheck source=/etc/osget/osget.conf
 source $CONFIGURATION_DIR/osget.conf
@@ -32,6 +32,7 @@ osget is a command line utility to easily download different operating systems
 --search or -s		Search from all available operating system names.
 --torrent or -t		Use bittorrent to download.
 --update or -u		Update the repository of operating systems available to download from an online source.
+--check or -c		Checks the oslist repository for dead links.
 
 EXAMPLE: osget -d ~/Downloads/ debian-11.0.0-amd64-netinst
 You can also use the generic names of Operating systems which will download the most common version.
@@ -39,6 +40,26 @@ You can also use the generic names of Operating systems which will download the 
 This is determined with a "default" symlink in the oslist subdirectories.
 
 EOF
+}
+
+scan_oslist () {
+	for file in $(find "$CONFIGURATION_DIR"/oslist/* -type f -print|grep -v "txt");do
+
+		source $file
+
+		for (( i=1 ; ; i++ )); do
+        	        n="URL${i}"                # the name of var
+                	[ "${!n+x}" ] || break          # see if it exists
+			if (validate_url ${!n});then
+				echo -e "${!n} is \e[42mUP!\e[0m"
+	                        URL="${!n}"
+        	                break
+                	else
+                        	echo -e "${!n} is \e[41mDOWN!\e[0m"
+                	fi
+        	done
+
+	done
 }
 
 list_osnames () {
@@ -212,7 +233,7 @@ if [ "$1" = "--help" ] || [ "$1" = "-h" ] || [ "$#" -eq "0" ];then
 fi
 
 
-OPTS=$(getopt -o hvloui:d:s:t: --long help,version,list,listosnames,update,information:,directory:,search:,torrent: -n 'osget' -- "$@")
+OPTS=$(getopt -o hvlouci:d:s:t: --long help,version,list,listosnames,update,check,information:,directory:,search:,torrent: -n 'osget' -- "$@")
 eval set -- "$OPTS"
 
 while true; do
@@ -222,6 +243,7 @@ while true; do
 		-l | --list ) list; shift ;;
 		-o | --listosnames ) list_osnames; shift ;;
 		-u | --update ) update_oslist; shift ;;
+		-c | --check ) scan_oslist; shift ;;
 		-i | --information ) get_information "$2"; shift 2 ;;
 		-d | --directory ) DOWNLOAD_DIR="$2"; shift 2 ;;
 		-s | --search ) search "$2"; shift 2 ;;
@@ -250,7 +272,7 @@ for par in "$@";do
 			
 			for (( i=1 ; ; i++ )); do
 				n="URL${i}"                # the name of var
-				[ "${!n+x}" ] || break          # see if it exists
+				[ "${!n+x}" ] || exit          # see if it exists
 				if (validate_url ${!n});then
 					URL="${!n}"
 					break
@@ -280,7 +302,7 @@ for par in "$@";do
 			
 			for (( i=1 ; ; i++ )); do
 				n="URL${i}"                # the name of var
-				[ "${!n+x}" ] || break          # see if it exists
+				[ "${!n+x}" ] || exit          # see if it exists
 				if (validate_url ${!n});then
 					URL="${!n}"
 					break

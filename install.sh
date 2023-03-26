@@ -1,11 +1,11 @@
 #! /bin/bash
 #
 # file: installer.sh
-# This is osget version 1.5
+# This is osget version 1.6
 # written by Freyr Gunnar Ólafsson
 # This program is licenced under the GPL version 3 or higher (if available)
 
-function id_bin () 
+id_bin () 
 {
 	local tmp=""
 	if [ -x /usr/bin/id ];then
@@ -31,7 +31,7 @@ checkif_root ()
 
 #This is where osget will be installed.
 TARGET="/usr/bin"
-VERSION="1.5"
+VERSION="1.6"
 ID=""
 
 #check if the files exist
@@ -97,7 +97,7 @@ if [ "$1" = "--help" ] || [ "$1" = "-h" ] || [ "$#" = "0" ];then
 	echo "--force-install will install AND override files if there are any."
 	echo "--uninstall will uninstall osget and remove all config files." 
 	echo ""
-	echo "install by typing the following: ./install.sh --install."
+	echo "install by typing the following either as root or with sudo: sudo ./install.sh --install"
 fi
 
 if [ "$1" = "--uninstall" ];then
