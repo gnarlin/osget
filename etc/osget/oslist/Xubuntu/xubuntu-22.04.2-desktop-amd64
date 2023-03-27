@@ -1,0 +1,6 @@
+URL1="http://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/22.04/release/xubuntu-22.04.2-desktop-amd64.iso"
+URL2="https://cdimages.ubuntu.com/xubuntu/releases/22.04/release/xubuntu-22.04.2-desktop-amd64.iso"
+URL3="http://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/22.04/release/xubuntu-22.04.2-desktop-amd64.iso"
+TORRENT="http://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/22.04/release/xubuntu-22.04.2-desktop-amd64.iso.torrent"
+MAGNET="magnet:?xt=urn:btih:3b2dda82a16378994dbb22c49bbb91c74d2fb19c"
+SHA256SUM="c7072859113399bef0e680a08c987c360f41642d8089ebb8928689066a9c9759"

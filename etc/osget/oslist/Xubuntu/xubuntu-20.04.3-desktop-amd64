@@ -1,6 +1,0 @@
-URL1="https://ftp.ussg.iu.edu/linux/xubuntu/releases/20.04/release/xubuntu-20.04.3-desktop-amd64.iso"
-URL2="https://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/20.04/release/xubuntu-20.04.3-desktop-amd64.iso"
-URL3="http://ubuntutym2.u-toyama.ac.jp/xubuntu/20.04/release/xubuntu-20.04.3-desktop-amd64.iso"
-TORRENT="https://torrent.ubuntu.com/xubuntu/releases/focal/release/desktop/xubuntu-20.04.3-desktop-amd64.iso.torrent"
-MAGNET="magnet:?xt=urn:btih:a2975c4fcfcd3da4d41e134f20ead5a5c62f551a"
-SHA256SUM="777032a3688fc47202f7cb07d18196a4d24b7b047160977100183d598538e9c5"

@@ -1,6 +1,0 @@
-URL1="https://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/21.04/release/xubuntu-21.04-desktop-amd64.iso"
-URL2="http://ftp.uni-kl.de/pub/linux/ubuntu-dvd/xubuntu/releases/21.04/release/xubuntu-21.04-desktop-amd64.iso"
-URL3="http://ubuntutym2.u-toyama.ac.jp/xubuntu/21.04/release/xubuntu-21.04-desktop-amd64.iso"
-TORRENT="https://torrent.ubuntu.com/xubuntu/releases/hirsute/release/desktop/xubuntu-21.04-desktop-amd64.iso.torrent"
-MAGNET="magnet:?xt=urn:btih:80d773cbf111e906608077967683a0ffcc3a7668"
-SHA256SUM="7f01f21760b87afbe9fa86615c666d763fd41adcac00a57f000fd52d6605cff7"
